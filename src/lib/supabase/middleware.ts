@@ -51,7 +51,11 @@ export async function updateSession(request: NextRequest) {
     return NextResponse.redirect(url);
   }
 
-  if (user && isPublicPath(pathname) && pathname !== "/auth") {
+  // /auth/callback must always run (it exchanges a one-time code — e.g. a
+  // password reset link clicked while another session is still signed in),
+  // so only sign-in/sign-up/forgot-password redirect an already-signed-in
+  // user away.
+  if (user && isPublicPath(pathname) && !pathname.startsWith("/auth")) {
     const url = request.nextUrl.clone();
     url.pathname = "/";
     url.search = "";
