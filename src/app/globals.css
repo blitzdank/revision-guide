@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+/*
+  Design tokens, adapted from the build brief (section 3). The brief's own
+  suggested values are starting points it explicitly says to adjust for
+  contrast — and its dark-mode --pink/--pink-strong (and --yellow/
+  --yellow-strong) were identical, which makes text invisible on its own
+  background. Verified against WCAG AA with a contrast-ratio script before
+  settling here:
+  - Light --pink-strong/--yellow-strong darkened (the brief's values were
+    ~2.4:1 and ~3.8:1 on their matching pink/yellow backgrounds; need 4.5:1).
+  - Dark --pink/--yellow changed from "same as -strong" to a deep tinted
+    surface, so -strong text has something to contrast against (now ~7-9:1).
+  Light values live on :root; dark values override them under :root.dark,
+  which next-themes toggles by adding/removing the "dark" class on <html>.
+*/
+:root {
+  --bg: #fff9fb;
+  --surface: #ffffff;
+  --pink: #f8c8dc;
+  --pink-strong: #8a3058;
+  --yellow: #fff1b8;
+  --yellow-strong: #7a5a00;
+  --text: #2a2230;
+  --muted: #7a6f80;
+  --correct: #1f7a53;
+  --wrong: #d64545;
+}
+
+:root.dark {
+  --bg: #1c1720;
+  --surface: #262030;
+  --pink: #3d2634;
+  --pink-strong: #f4b6cf;
+  --yellow: #3d3210;
+  --yellow-strong: #f7e08a;
+  --text: #f5eef3;
+  --muted: #a99fb0;
+  --correct: #5bd19a;
+  --wrong: #ff7a7a;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-pink: var(--pink);
+  --color-pink-strong: var(--pink-strong);
+  --color-yellow: var(--yellow);
+  --color-yellow-strong: var(--yellow-strong);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-correct: var(--correct);
+  --color-wrong: var(--wrong);
+  --font-sans: var(--font-body);
+}
+
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Respect "reduce motion" across the app instead of per-component. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
