@@ -1,5 +1,20 @@
 # Changes
 
+## Phase 2 — Exam countdowns and Home screen (2026-10-23)
+
+- Exam countdowns: add/edit/delete, with an optional time. Lists soonest
+  first, with past exams moved to a "Done" section automatically.
+- Home screen's "Next exam" card now shows the real nearest countdown
+  (days away, or hours on the final day if a time was given) and links to
+  the full countdowns list.
+- New `countdowns.all_day` column
+  ([migration 0002](supabase/migrations/0002_countdown_all_day.sql)).
+
+### Deployed
+- Code is pushed to GitHub (`main` branch). Railway deploy is pending —
+  Railway was down when we tried; pick up from SETUP.md section 4 once it's
+  back.
+
 ## Phase 1 — Foundations (2026-10-21)
 
 - Project set up: Next.js (App Router) + TypeScript + Tailwind CSS, hosted on
