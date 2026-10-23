@@ -46,6 +46,23 @@ export function scoreQuestion(
   }
 }
 
+/** A human-readable "correct answer" for the mistakes bank — extended
+ * questions are self-marked, so there's no single right answer to show. */
+export function describeCorrectAnswer(question: QuizQuestion): string | null {
+  switch (question.type) {
+    case "multiple_choice":
+      return question.options[question.answerIndex];
+    case "short_answer":
+      return question.accepted[0];
+    case "numeric":
+      return `${question.answer}${question.unit ? ` ${question.unit}` : ""}`;
+    case "ordering":
+      return question.items.join(" → ");
+    case "extended":
+      return null;
+  }
+}
+
 /** Self-marked extended answers: "wrong" (for the mistakes bank) means she
  * rated herself below 60% of the available marks. */
 export function scoreExtended(question: QuizQuestion, marksAwarded: number, answerGiven: string): QuestionResult {

@@ -1,5 +1,32 @@
 # Changes
 
+## Phase 4 — Mistakes bank and Report a mistake (2026-10-23)
+
+- **Mistakes bank** (`/mistakes`): real data now, filterable by subject and
+  topic. Each item shows her answer, the correct answer and the
+  explanation. **Retry** re-asks the actual question; **Mark as understood**
+  self-attests. Either way, it takes being right twice on separate days
+  (tracked via a new `last_correct_date` column) before an item leaves the
+  bank — two clicks in one sitting don't count twice.
+- **Report a mistake**: a flag link on every revision guide, flashcard and
+  quiz question, with the four reasons from the brief (wrong answer, typo,
+  not on my spec, confusing) plus an optional comment.
+- **Admin → Reports** (Me → Reports, admin only): lists open reports with
+  enough context to find and fix the item (subject, topic, and the actual
+  question/flashcard text) — never her answers or progress, per the brief.
+- Fixed quiz question ids to be namespaced (`subject/strand/topic#id`)
+  instead of short per-topic ids, so a mistake/report can always be traced
+  back to its exact content file. New `mistakes.subject` column so mistakes
+  can be filtered by subject (and real-paper mistakes, which don't belong
+  to one topic, still show which subject they're from).
+- Migrations: [0003](supabase/migrations/0003_mistakes_last_correct.sql),
+  [0004](supabase/migrations/0004_mistakes_subject.sql).
+
+### Known gaps (later phases)
+- Photo upload on real-paper mistakes isn't wired up yet.
+- "Explain this" (AI tutor) isn't shown anywhere — correctly hidden until
+  Phase 5 adds an API key.
+
 ## Phase 3 — English, and the shared learning engine (2026-10-23)
 
 This phase builds the content/flashcard/quiz engine every later subject

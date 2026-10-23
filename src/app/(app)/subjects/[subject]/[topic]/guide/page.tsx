@@ -2,9 +2,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Layers, ListChecks } from "lucide-react";
 import { resolveTopic } from "@/lib/content/resolve";
-import { loadGuide } from "@/lib/content/load";
+import { loadGuide, topicId } from "@/lib/content/load";
 import { MarkdownGuide } from "@/components/markdown-guide";
 import { BackLink } from "@/components/back-link";
+import { ReportMistakeButton } from "@/components/report-mistake-button";
 
 export default async function GuidePage({
   params,
@@ -27,6 +28,8 @@ export default async function GuidePage({
       </div>
 
       <MarkdownGuide markdown={guide} />
+
+      <ReportMistakeButton itemType="note" itemId={topicId(topic)} className="self-start" />
 
       <div className="mt-2 flex gap-3">
         <Link

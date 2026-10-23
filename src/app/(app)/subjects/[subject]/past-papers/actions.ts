@@ -52,6 +52,7 @@ export async function logPaperAttempt(
       dropped.map((r) => ({
         user_id: user.id,
         source: "real_paper" as const,
+        subject: subjectSlug,
         paper_ref: `${paperLabel} ${year} — ${r.label}`,
       })),
     );

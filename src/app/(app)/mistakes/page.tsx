@@ -1,12 +1,19 @@
-export default function MistakesPage() {
+import { createClient } from "@/lib/supabase/server";
+import { getOpenMistakes } from "@/lib/mistakes";
+import { MistakesManager } from "./mistakes-manager";
+
+export default async function MistakesPage() {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  const mistakes = user ? await getOpenMistakes(user.id) : [];
+
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-4 p-4 pt-8 md:p-8">
       <h1 className="text-2xl font-bold text-text">Mistakes bank</h1>
-      <p className="rounded-2xl bg-surface p-5 text-sm text-muted shadow-sm">
-        Nothing here yet. Wrong quiz answers and real-paper questions you drop
-        marks on will land here automatically once quizzes are built (Phase
-        3) and the mistakes bank is wired up (Phase 4).
-      </p>
+      <MistakesManager mistakes={mistakes} />
     </div>
   );
 }

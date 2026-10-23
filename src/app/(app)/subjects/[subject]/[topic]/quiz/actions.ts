@@ -26,10 +26,14 @@ export async function submitQuizResults(
     total,
   });
 
+  // Namespaced so a mistake/report can be traced straight back to its
+  // content file later — question ids are only unique within a topic.
+  const fullId = (questionId: string) => `${topicScope}#${questionId}`;
+
   await supabase.from("question_attempts").insert(
     results.map((r) => ({
       user_id: user.id,
-      question_id: r.questionId,
+      question_id: fullId(r.questionId),
       answer: r.answerGiven,
       marks_awarded: r.marksAwarded,
       correct: r.correct,
@@ -42,7 +46,8 @@ export async function submitQuizResults(
       wrong.map((r) => ({
         user_id: user.id,
         source: "quiz" as const,
-        question_id: r.questionId,
+        subject: subjectSlug,
+        question_id: fullId(r.questionId),
         her_answer: r.answerGiven,
       })),
     );

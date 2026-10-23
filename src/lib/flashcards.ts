@@ -3,7 +3,14 @@ import { createClient } from "@/lib/supabase/server";
 import { loadFlashcards, topicId, type TopicRef } from "@/lib/content/load";
 import { toDateOnly } from "@/lib/srs";
 
-export type StudyCard = { cardId: string; front: string; back: string; box: number };
+export type StudyCard = {
+  cardId: string;
+  front: string;
+  back: string;
+  box: number;
+  /** Her own cards can't be "reported" the way built-in content can. */
+  isUserCard: boolean;
+};
 type ProgressRow = { box: number; nextDue: string };
 
 /** A card with no progress row has never been studied, so it's due now. */
@@ -32,6 +39,7 @@ function builtInDeck(ref: TopicRef): StudyCard[] {
     front: c.front,
     back: c.back,
     box: 1,
+    isUserCard: false,
   }));
 }
 
@@ -44,7 +52,13 @@ async function userDeck(ref: TopicRef, userId: string): Promise<StudyCard[]> {
     .eq("subject", ref.subject)
     .eq("topic", topicId(ref));
 
-  return (data ?? []).map((c) => ({ cardId: `user:${c.id}`, front: c.front, back: c.back, box: 1 }));
+  return (data ?? []).map((c) => ({
+    cardId: `user:${c.id}`,
+    front: c.front,
+    back: c.back,
+    box: 1,
+    isUserCard: true,
+  }));
 }
 
 /** The full deck for one topic, each card's box filled in from progress,

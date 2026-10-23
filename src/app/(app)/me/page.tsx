@@ -32,12 +32,20 @@ export default async function MePage() {
       </section>
 
       {profile?.role === "admin" && (
-        <Link
-          href="/admin/invites"
-          className="rounded-2xl bg-yellow/35 p-5 font-semibold text-yellow-strong shadow-sm"
-        >
-          Manage invite codes →
-        </Link>
+        <div className="flex flex-col gap-3">
+          <Link
+            href="/admin/invites"
+            className="rounded-2xl bg-yellow/35 p-5 font-semibold text-yellow-strong shadow-sm"
+          >
+            Manage invite codes →
+          </Link>
+          <Link
+            href="/admin/reports"
+            className="rounded-2xl bg-yellow/35 p-5 font-semibold text-yellow-strong shadow-sm"
+          >
+            Reports →
+          </Link>
+        </div>
       )}
 
       <form action={signOut}>
