@@ -1,0 +1,83 @@
+[
+  {
+    "id": "cc1",
+    "type": "multiple_choice",
+    "specRef": "8702/1 Section B",
+    "marks": 1,
+    "prompt": "Who says \"Mankind was my business\"?",
+    "options": ["Scrooge", "Marley's Ghost", "Tiny Tim", "Fred"],
+    "answerIndex": 1,
+    "explanation": "Marley's Ghost — a statement of the novel's theme of social responsibility."
+  },
+  {
+    "id": "cc2",
+    "type": "ordering",
+    "specRef": "8702/1 Section B",
+    "marks": 3,
+    "prompt": "Put the three spirits in the order they visit Scrooge.",
+    "items": ["Ghost of Christmas Past", "Ghost of Christmas Present", "Ghost of Christmas Yet to Come"]
+  },
+  {
+    "id": "cc3",
+    "type": "short_answer",
+    "specRef": "8702/1 Section B",
+    "marks": 1,
+    "prompt": "Which family does the Ghost of Christmas Present show Scrooge, highlighting poverty alongside warmth?",
+    "accepted": ["the cratchits", "cratchits", "the cratchit family"],
+    "explanation": "The Cratchit family — contrasted directly with Scrooge's wealth and isolation."
+  },
+  {
+    "id": "cc4",
+    "type": "multiple_choice",
+    "specRef": "8702/1 Section B",
+    "marks": 1,
+    "prompt": "\"Are there no prisons? ... And the Union workhouses?\" is used by Dickens to:",
+    "options": [
+      "Show Scrooge's sense of humour",
+      "Criticise Victorian attitudes to poverty",
+      "Praise the Poor Law",
+      "Show Scrooge's generosity"
+    ],
+    "answerIndex": 1,
+    "explanation": "Direct social criticism of Victorian attitudes to poverty, including the Poor Law."
+  },
+  {
+    "id": "cc5",
+    "type": "short_answer",
+    "specRef": "8702/1 Section B",
+    "marks": 1,
+    "prompt": "What is the novel's central theme, structurally built around Scrooge's change?",
+    "accepted": ["redemption", "redemption and transformation", "transformation"],
+    "explanation": "Redemption and transformation."
+  },
+  {
+    "id": "cc6",
+    "type": "short_answer",
+    "specRef": "8702/1 Section B",
+    "marks": 1,
+    "prompt": "How many staves (chapters) does A Christmas Carol have?",
+    "accepted": ["5", "five"],
+    "explanation": "Five staves, each built around a visitation."
+  },
+  {
+    "id": "cc7",
+    "type": "extended",
+    "specRef": "8702/1 Section B",
+    "marks": 30,
+    "prompt": "Starting with this extract where Scrooge dismisses his nephew Fred's Christmas invitation with \"Bah! Humbug!\", write about how Dickens presents Scrooge's isolation. Write about this moment in the novel and how Dickens presents isolation in the novel as a whole.",
+    "indicativeContent": [
+      "In the extract: Scrooge's dismissive language (\"Bah! Humbug!\") and rejection of Fred's warmth establishes isolation as self-imposed",
+      "Contrast between Fred's generosity (repeated invitation despite rejection) and Scrooge's coldness",
+      "Whole novel: the Ghost of Christmas Past reveals the roots of Scrooge's isolation (lonely childhood, Fan, the end of his engagement to Belle)",
+      "The Ghost of Christmas Yet to Come shows the consequence of isolation taken to its extreme — a death nobody mourns",
+      "Contrast with the Cratchits' community/family warmth despite poverty, reinforcing isolation vs community as a structuring theme",
+      "Context: Dickens's concern with social responsibility and community in 1843 London informs the critique of isolated self-interest"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-7", "description": "Simple comments on the extract, little reference to the whole novel or writer's methods." },
+      { "level": 2, "marksRange": "8-15", "description": "Some relevant points from the extract and the whole novel, with attempts to discuss Dickens's methods." },
+      { "level": 3, "marksRange": "16-22", "description": "Clear understanding of the extract and whole novel, with relevant references to Dickens's methods and some context." },
+      { "level": 4, "marksRange": "23-30", "description": "Detailed, perceptive analysis across the extract and whole novel, exploring Dickens's methods with well-integrated context." }
+    ]
+  }
+]

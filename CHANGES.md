@@ -1,5 +1,51 @@
 # Changes
 
+## Phase 3 — English, and the shared learning engine (2026-10-23)
+
+This phase builds the content/flashcard/quiz engine every later subject
+reuses, plus real English content on top of it.
+
+- **Content system**: subjects map to a `content/<subject>/<strand>/...`
+  folder of `spec.json` (every topic tagged to a real AQA spec reference,
+  including ones not written yet — see the "Coming soon" entries on the
+  English subject page), `guide.md`, `flashcards.json`, `questions.json`.
+  See [CONTENT.md](CONTENT.md).
+- **Revision guides**: Markdown-rendered, with key terms highlighted and
+  exam-tip boxes.
+- **Flashcards**: Leitner spaced repetition (boxes 1-5, ~1/2/4/8/16-day
+  intervals), flip/swipe study screen, "X left" counter. A card already
+  reviewed today won't reappear until it's next due.
+- **Quizzes**: all 5 question types from the brief — multiple choice, short
+  answer, numeric, ordering, and self-marked extended answers (shows
+  indicative content + mark-scheme-style level descriptors, she enters her
+  own mark). Instant per-question feedback; wrong answers are written to the
+  `mistakes` table automatically (the Mistakes bank screen itself is
+  Phase 4).
+- **Past papers & tracker**: links to AQA's official past-papers pages per
+  subject, plus a marks-per-question tracker (`paper_attempts`); dropped
+  marks also feed the mistakes table.
+- **Real content**: English Language (4 of 10 AQA topics fully written:
+  language analysis, structure analysis, descriptive/narrative writing,
+  viewpoint writing) and English Literature (3 of 5: Macbeth, A Christmas
+  Carol, Power and Conflict) — spec-mapped against AQA's official 8700/8702
+  specifications. The rest are listed in spec.json as "Coming soon" and can
+  be added later (ask Claude Code — see CONTENT.md).
+- Back-navigation link added to every nested screen, so you're never forced
+  back to a subject's start to get around.
+- Removed the Home screen's "Due today" flashcard count per feedback — it
+  would get overwhelming once every subject has content. The underlying
+  spaced-repetition behaviour (a reviewed card won't repeat same-day) is
+  unchanged.
+
+### Known gaps (not yet built)
+- Mixed quizzes across a whole paper/subject (brief section 6.3) — only
+  per-topic quizzes exist so far.
+- Confidence levels (Not started/Weak/Getting there/Confident) are still a
+  static placeholder on subject tiles — real tracking is Phase 12 (Polish)
+  per the brief's own phasing.
+- Photo upload on real-paper mistakes — Phase 4, alongside the Mistakes
+  bank screen itself.
+
 ## Phase 2 — Exam countdowns and Home screen (2026-10-23)
 
 - Exam countdowns: add/edit/delete, with an optional time. Lists soonest

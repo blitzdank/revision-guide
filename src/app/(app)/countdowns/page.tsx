@@ -1,6 +1,7 @@
 import { createClient } from "@/lib/supabase/server";
 import { isPast, type Countdown } from "@/lib/countdown";
 import { CountdownsManager } from "./countdowns-manager";
+import { BackLink } from "@/components/back-link";
 
 export default async function CountdownsPage() {
   const supabase = await createClient();
@@ -15,6 +16,7 @@ export default async function CountdownsPage() {
 
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-4 p-4 pt-8 md:p-8">
+      <BackLink href="/" label="Home" />
       <h1 className="text-2xl font-bold text-text">Exam countdowns</h1>
       <CountdownsManager upcoming={upcoming} done={done} />
     </div>

@@ -1,0 +1,99 @@
+[
+  {
+    "id": "dw1",
+    "type": "multiple_choice",
+    "specRef": "8700/1 Q5",
+    "marks": 1,
+    "prompt": "How many marks is Q5 worth in total?",
+    "options": ["16", "24", "40", "8"],
+    "answerIndex": 2,
+    "explanation": "40 marks total: 24 for content/organisation, 16 for technical accuracy."
+  },
+  {
+    "id": "dw2",
+    "type": "short_answer",
+    "specRef": "8700/1 Q5",
+    "marks": 1,
+    "prompt": "How many marks of the 40 are for technical accuracy (spelling, punctuation, grammar)?",
+    "accepted": ["16"],
+    "explanation": "16 marks — AO6, technical accuracy."
+  },
+  {
+    "id": "dw3",
+    "type": "multiple_choice",
+    "specRef": "8700/1 Q5",
+    "marks": 1,
+    "prompt": "Which is the stronger approach to narrative under time pressure?",
+    "options": [
+      "Cover a whole day so there's lots to write about",
+      "Cover a single, contained moment in real depth",
+      "Write mostly dialogue to fill space quickly",
+      "Summarise events rather than show them"
+    ],
+    "answerIndex": 1,
+    "explanation": "A short, controlled moment explored in depth is much stronger than racing through a lot of plot."
+  },
+  {
+    "id": "dw4",
+    "type": "ordering",
+    "specRef": "8700/1 Q5",
+    "marks": 3,
+    "prompt": "Put these planning steps in a sensible order for the ~5 minutes before writing.",
+    "items": [
+      "Decide: description or story",
+      "Plan a structure to move through (e.g. wide to narrow)",
+      "Jot 3-4 ambitious vocabulary choices or techniques"
+    ]
+  },
+  {
+    "id": "dw5",
+    "type": "short_answer",
+    "specRef": "8700/1 Q5",
+    "marks": 1,
+    "prompt": "What should a new paragraph usually signal in creative writing?",
+    "accepted": ["a shift in focus", "a change in focus", "shift in focus, time or mood", "a shift"],
+    "explanation": "A shift in focus, time, or mood — paragraphing should match the structure."
+  },
+  {
+    "id": "dw6",
+    "type": "extended",
+    "specRef": "8700/1 Q5",
+    "marks": 40,
+    "prompt": "Write a description suggested by a photograph of an abandoned fairground at dusk. (Write for about 25-30 minutes if doing this under timed conditions.)",
+    "indicativeContent": [
+      "A clear structure moving through the scene (e.g. wide shot of the fairground, narrowing to one detail like a still carousel horse)",
+      "Sensory detail beyond sight — sound (creaking metal, wind), smell (rust, damp), touch (cold air)",
+      "At least one deliberate, well-controlled piece of figurative language (metaphor/personification) rather than several scattered ones",
+      "Varied sentence lengths and openers — short sentences for impact alongside longer, detailed ones",
+      "Paragraphing that matches shifts in focus or mood",
+      "Accurate spelling, punctuation and grammar throughout"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-9", "description": "Simple description with limited structure and vocabulary; frequent errors that affect meaning." },
+      { "level": 2, "marksRange": "10-18", "description": "Some clear description with attempts at structure and technique; inconsistent accuracy." },
+      { "level": 3, "marksRange": "19-27", "description": "Clear, controlled description with a sense of structure, varied sentences, and generally accurate SPaG." },
+      { "level": 4, "marksRange": "28-40", "description": "Compelling, well-structured description with ambitious, controlled vocabulary and techniques, and consistently accurate SPaG." }
+    ]
+  },
+  {
+    "id": "dw7",
+    "type": "extended",
+    "specRef": "8700/1 Q5",
+    "marks": 40,
+    "prompt": "Write a short story that begins with the line: \"The letter had been sitting on the doormat for three days before anyone noticed it.\"",
+    "indicativeContent": [
+      "A contained, focused moment rather than an attempt to cover a long time period",
+      "Clear narrative shape — a sense of beginning, development and an ending (even if open/ambiguous)",
+      "Structural choices used deliberately — e.g. withholding what's in the letter to build tension",
+      "A controlled narrative voice and consistent tense",
+      "Technical accuracy — spelling, punctuation and grammar throughout",
+      "Dialogue (if used) that is purposeful, not just filler"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-9", "description": "Simple narrative with limited structure; frequent errors that affect meaning." },
+      { "level": 2, "marksRange": "10-18", "description": "A recognisable story shape with some narrative technique; inconsistent accuracy." },
+      { "level": 3, "marksRange": "19-27", "description": "A clear, controlled narrative with deliberate structural choices and generally accurate SPaG." },
+      { "level": 4, "marksRange": "28-40", "description": "A compelling, tightly controlled narrative with ambitious technique and consistently accurate SPaG." }
+    ]
+  }
+]

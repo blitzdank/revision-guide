@@ -1,0 +1,27 @@
+{
+  "qualification": "AQA GCSE English Language (8700)",
+  "papers": [
+    {
+      "id": "paper-1",
+      "name": "Paper 1: Explorations in Creative Reading and Writing",
+      "topics": [
+        { "slug": "retrieval-fiction", "name": "Finding information (Q1)", "specRef": "8700/1 Q1" },
+        { "slug": "language-analysis-fiction", "name": "Language analysis (Q2)", "specRef": "8700/1 Q2" },
+        { "slug": "structure-analysis-fiction", "name": "Structure analysis (Q3)", "specRef": "8700/1 Q3" },
+        { "slug": "evaluation-fiction", "name": "Evaluation (Q4)", "specRef": "8700/1 Q4" },
+        { "slug": "descriptive-narrative-writing", "name": "Descriptive/narrative writing (Q5)", "specRef": "8700/1 Q5" }
+      ]
+    },
+    {
+      "id": "paper-2",
+      "name": "Paper 2: Writers' Viewpoints and Perspectives",
+      "topics": [
+        { "slug": "true-false-statements", "name": "True/false statements (Q1)", "specRef": "8700/2 Q1" },
+        { "slug": "summary-synthesis", "name": "Summary and synthesis (Q2)", "specRef": "8700/2 Q2" },
+        { "slug": "language-analysis-nonfiction", "name": "Language analysis (Q3)", "specRef": "8700/2 Q3" },
+        { "slug": "comparing-perspectives", "name": "Comparing writers' perspectives (Q4)", "specRef": "8700/2 Q4" },
+        { "slug": "viewpoints-writing", "name": "Viewpoint/argument writing (Q5)", "specRef": "8700/2 Q5" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "english": {
+    "language": {
+      "specUrl": "https://www.aqa.org.uk/subjects/english/gcse/english-8700",
+      "papers": [
+        { "id": "paper-1", "name": "Paper 1: Explorations in Creative Reading and Writing", "maxMarks": 80 },
+        { "id": "paper-2", "name": "Paper 2: Writers' Viewpoints and Perspectives", "maxMarks": 80 }
+      ]
+    },
+    "literature": {
+      "specUrl": "https://www.aqa.org.uk/subjects/english/gcse/english-literature-8702",
+      "papers": [
+        { "id": "paper-1", "name": "Paper 1: Shakespeare and the 19th-century novel", "maxMarks": 64 },
+        { "id": "paper-2", "name": "Paper 2: Modern texts and poetry", "maxMarks": 96 }
+      ]
+    }
+  }
+}

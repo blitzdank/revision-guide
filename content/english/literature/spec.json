@@ -1,0 +1,22 @@
+{
+  "qualification": "AQA GCSE English Literature (8702)",
+  "papers": [
+    {
+      "id": "paper-1",
+      "name": "Paper 1: Shakespeare and the 19th-century novel",
+      "topics": [
+        { "slug": "macbeth", "name": "Macbeth", "specRef": "8702/1 Section A" },
+        { "slug": "a-christmas-carol", "name": "A Christmas Carol", "specRef": "8702/1 Section B" }
+      ]
+    },
+    {
+      "id": "paper-2",
+      "name": "Paper 2: Modern texts and poetry",
+      "topics": [
+        { "slug": "an-inspector-calls", "name": "An Inspector Calls", "specRef": "8702/2 Section A" },
+        { "slug": "power-and-conflict", "name": "Power and Conflict poetry", "specRef": "8702/2 Section B" },
+        { "slug": "unseen-poetry", "name": "Unseen poetry", "specRef": "8702/2 Section C" }
+      ]
+    }
+  ]
+}

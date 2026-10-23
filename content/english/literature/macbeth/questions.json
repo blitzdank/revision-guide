@@ -1,0 +1,93 @@
+[
+  {
+    "id": "mb1",
+    "type": "multiple_choice",
+    "specRef": "8702/1 Section A",
+    "marks": 1,
+    "prompt": "Who says \"Fair is foul, and foul is fair\"?",
+    "options": ["Macbeth", "Lady Macbeth", "The Witches", "Banquo"],
+    "answerIndex": 2,
+    "explanation": "The Witches, in Act 1 — it introduces the play's confusion of appearance and reality."
+  },
+  {
+    "id": "mb2",
+    "type": "multiple_choice",
+    "specRef": "8702/1 Section A",
+    "marks": 1,
+    "prompt": "What does Lady Macbeth question to push Macbeth toward murder?",
+    "options": ["His intelligence", "His manhood", "His loyalty to Duncan", "His wealth"],
+    "answerIndex": 1,
+    "explanation": "She repeatedly questions his masculinity — part of the play's exploration of masculinity as a theme."
+  },
+  {
+    "id": "mb3",
+    "type": "short_answer",
+    "specRef": "8702/1 Section A",
+    "marks": 1,
+    "prompt": "Who kills Macbeth at the end of the play?",
+    "accepted": ["macduff"],
+    "explanation": "Macduff — whose family Macbeth had murdered."
+  },
+  {
+    "id": "mb4",
+    "type": "ordering",
+    "specRef": "8702/1 Section A",
+    "marks": 4,
+    "prompt": "Put these events in the order they happen in the play.",
+    "items": [
+      "The witches prophesy Macbeth will be king",
+      "Macbeth murders Duncan",
+      "Banquo is murdered and his ghost appears",
+      "Lady Macbeth sleepwalks and dies"
+    ]
+  },
+  {
+    "id": "mb5",
+    "type": "short_answer",
+    "specRef": "8702/1 Section A",
+    "marks": 1,
+    "prompt": "What idea means a monarch's authority comes from God, making regicide a crime against the natural order?",
+    "accepted": ["divine right of kings", "the divine right of kings"],
+    "explanation": "The Divine Right of Kings — key context for why killing Duncan is shown as so unnatural."
+  },
+  {
+    "id": "mb6",
+    "type": "multiple_choice",
+    "specRef": "8702/1 Section A",
+    "marks": 1,
+    "prompt": "\"Will all great Neptune's ocean wash this blood clean from my hand?\" expresses which theme?",
+    "options": ["Ambition", "Guilt", "The supernatural", "Masculinity"],
+    "answerIndex": 1,
+    "explanation": "Guilt — the idea that his guilt can't be washed away."
+  },
+  {
+    "id": "mb7",
+    "type": "short_answer",
+    "specRef": "8702/1 Section A",
+    "marks": 1,
+    "prompt": "What must you cover alongside the printed extract in your Paper 1 Section A answer?",
+    "accepted": ["the whole play", "whole play"],
+    "explanation": "The whole play — missing this loses a large chunk of the available marks."
+  },
+  {
+    "id": "mb8",
+    "type": "extended",
+    "specRef": "8702/1 Section A",
+    "marks": 30,
+    "prompt": "Starting with this moment where Lady Macbeth reads Macbeth's letter about the witches' prophecy, write about how Shakespeare presents ambition in Macbeth. Write about this moment in the play and how Shakespeare presents ambition in the play as a whole.",
+    "indicativeContent": [
+      "In the extract: Lady Macbeth's immediate leap to murder (\"the nearest way\") shows ambition as something that overrides hesitation",
+      "Her fear that Macbeth is \"too full o' th' milk of human kindness\" frames ambition and conscience as opposites",
+      "Whole play: Macbeth's own ambition shown through soliloquy (\"vaulting ambition, which o'erleaps itself\") — he recognises his own flaw even as he acts on it",
+      "Ambition is shown as corrupting rather than admirable — contrasted with Banquo, who also hears the prophecy but doesn't act on it",
+      "Context: Jacobean audiences would see unchecked ambition against a rightful king as especially transgressive, tied to the Divine Right of Kings",
+      "Tracks how ambition curdles into guilt and paranoia by the play's end — ambition doesn't bring the security Macbeth sought"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-7", "description": "Simple comments on the extract, little reference to the whole play or writer's methods." },
+      { "level": 2, "marksRange": "8-15", "description": "Some relevant points from the extract and the whole play, with attempts to discuss Shakespeare's methods." },
+      { "level": 3, "marksRange": "16-22", "description": "Clear understanding of the extract and the whole play, with relevant references to Shakespeare's methods and some context." },
+      { "level": 4, "marksRange": "23-30", "description": "Detailed, perceptive analysis across the extract and whole play, exploring Shakespeare's methods with well-integrated context." }
+    ]
+  }
+]

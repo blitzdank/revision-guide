@@ -1,0 +1,93 @@
+[
+  {
+    "id": "pc1",
+    "type": "multiple_choice",
+    "specRef": "8702/2 Section B",
+    "marks": 1,
+    "prompt": "Who wrote Ozymandias?",
+    "options": ["William Blake", "Percy Bysshe Shelley", "William Wordsworth", "Robert Browning"],
+    "answerIndex": 1,
+    "explanation": "Percy Bysshe Shelley."
+  },
+  {
+    "id": "pc2",
+    "type": "multiple_choice",
+    "specRef": "8702/2 Section B",
+    "marks": 1,
+    "prompt": "Which poem is a duke's chilling monologue about his late wife?",
+    "options": ["My Last Duchess", "The Émigrée", "Tissue", "London"],
+    "answerIndex": 0,
+    "explanation": "My Last Duchess, by Robert Browning."
+  },
+  {
+    "id": "pc3",
+    "type": "short_answer",
+    "specRef": "8702/2 Section B",
+    "marks": 1,
+    "prompt": "Which poet wrote Checking Out Me History?",
+    "accepted": ["john agard", "agard"],
+    "explanation": "John Agard."
+  },
+  {
+    "id": "pc4",
+    "type": "short_answer",
+    "specRef": "8702/2 Section B",
+    "marks": 1,
+    "prompt": "Which poem is about a soldier haunted by guilt after shooting a looter?",
+    "accepted": ["remains"],
+    "explanation": "Remains, by Simon Armitage."
+  },
+  {
+    "id": "pc5",
+    "type": "multiple_choice",
+    "specRef": "8702/2 Section B",
+    "marks": 1,
+    "prompt": "Exposure and Storm on the Island pair well for comparison because both explore:",
+    "options": [
+      "Family relationships during conflict",
+      "Nature/weather as a hostile, uncontrollable force",
+      "A speaker's memory of a lost homeland",
+      "A duke's jealousy"
+    ],
+    "answerIndex": 1,
+    "explanation": "Both treat nature/weather as a hostile force rivalling human conflict itself."
+  },
+  {
+    "id": "pc6",
+    "type": "ordering",
+    "specRef": "8702/2 Section B",
+    "marks": 3,
+    "prompt": "A strong comparison essay works across three levels. Put them in the order you'd typically plan them.",
+    "items": ["Ideas — what each poem argues about power/conflict", "Structure/form — how each poem is shaped", "Language — the techniques each poet uses"]
+  },
+  {
+    "id": "pc7",
+    "type": "short_answer",
+    "specRef": "8702/2 Section B",
+    "marks": 1,
+    "prompt": "Name one connective word useful for comparing poems throughout an essay (not just at the start).",
+    "accepted": ["similarly", "in contrast", "whereas", "however", "likewise"],
+    "explanation": "Any of: similarly, in contrast, whereas, however, likewise."
+  },
+  {
+    "id": "pc8",
+    "type": "extended",
+    "specRef": "8702/2 Section B",
+    "marks": 30,
+    "prompt": "Compare how poets present the impact of conflict on individuals in Poppies and one other poem from Power and Conflict.",
+    "indicativeContent": [
+      "Poppies: a mother's grief and anxiety for a son gone to war, conveyed through domestic imagery and a sense of being left behind",
+      "A well-chosen second poem (e.g. Kamikaze, War Photographer, or Remains) with a clear, specific point of comparison about impact on an individual",
+      "Comparison of form/structure — e.g. how each poem's structure reflects the speaker's emotional state",
+      "Comparison of language choices and their effect, not just technique-spotting",
+      "A clear line of argument sustained and compared throughout, not treated as two separate mini-essays",
+      "Some use of context where relevant (e.g. contemporary conflict, the poet's own background) integrated naturally"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-6", "description": "Simple comments on both poems with limited comparison." },
+      { "level": 2, "marksRange": "7-13", "description": "Some relevant comparison, with basic reference to language/structure." },
+      { "level": 3, "marksRange": "14-20", "description": "Clear, developed comparison across ideas, structure and language." },
+      { "level": 4, "marksRange": "21-30", "description": "Detailed, perceptive comparison sustained throughout, exploring both poems' methods and effects with precision." }
+    ]
+  }
+]

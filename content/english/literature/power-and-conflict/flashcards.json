@@ -1,0 +1,12 @@
+[
+  { "id": "f1", "front": "What does the Paper 2 Section B poetry question ask you to do?", "back": "Compare one printed poem from the cluster to one other poem from the cluster, chosen by you." },
+  { "id": "f2", "front": "What is Ozymandias about?", "back": "The ruins of a tyrant's statue — power is temporary, however great it felt at the time." },
+  { "id": "f3", "front": "What is My Last Duchess about?", "back": "A duke's chilling monologue revealing his controlling, murderous jealousy over his late wife." },
+  { "id": "f4", "front": "Why do Ozymandias and My Last Duchess pair well for comparison?", "back": "Both use a powerful man's own voice/legacy against him, exploring how power is performed and how fragile it really is." },
+  { "id": "f5", "front": "What is Exposure about?", "back": "Soldiers suffering and dying from cold and weather, as much as from the enemy." },
+  { "id": "f6", "front": "What is Remains about?", "back": "A soldier haunted by guilt after shooting a looter." },
+  { "id": "f7", "front": "What is Checking Out Me History about?", "back": "Reclaiming erased Black history against a Eurocentric education." },
+  { "id": "f8", "front": "What three levels should a strong poetry comparison work across?", "back": "Ideas (what each poem argues), form/structure (how each is shaped), and language (techniques each poet uses)." },
+  { "id": "f9", "front": "What's wrong with writing about Poem A, then Poem B, separately?", "back": "It's not really comparing — a strong answer compares throughout, using connectives like \"similarly,\" \"in contrast,\" \"whereas.\"" },
+  { "id": "f10", "front": "What is Kamikaze about?", "back": "A pilot's choice to turn back from a suicide mission, and its lasting consequences for him and his family." }
+]

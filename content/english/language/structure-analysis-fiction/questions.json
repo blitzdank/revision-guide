@@ -1,0 +1,82 @@
+[
+  {
+    "id": "sa1",
+    "type": "multiple_choice",
+    "specRef": "8700/1 Q3",
+    "marks": 1,
+    "prompt": "Q3 asks about structure. This mainly means:",
+    "options": [
+      "The individual words and phrases chosen",
+      "How the whole extract is organised — focus, order, time, withholding",
+      "Whether the spelling and punctuation are accurate",
+      "The writer's opinion of the topic"
+    ],
+    "answerIndex": 1,
+    "explanation": "Structure is about the bigger choices across the whole source, not word-level language."
+  },
+  {
+    "id": "sa2",
+    "type": "short_answer",
+    "specRef": "8700/1 Q3",
+    "marks": 1,
+    "prompt": "An extract that opens on a wide description and ends on one small detail uses what kind of structural shift?",
+    "accepted": ["wide to narrow", "general to specific", "narrowing focus"],
+    "explanation": "A wide-to-narrow (general-to-specific) shift, often used to build focus or suspense."
+  },
+  {
+    "id": "sa3",
+    "type": "multiple_choice",
+    "specRef": "8700/1 Q3",
+    "marks": 1,
+    "prompt": "\"First the man enters the house, then he climbs the stairs, then he opens a door\" is:",
+    "options": [
+      "A strong structural analysis point",
+      "Plot summary, not structural analysis",
+      "An example of pathetic fallacy",
+      "A language analysis point"
+    ],
+    "answerIndex": 1,
+    "explanation": "It just retells events in order — it doesn't explain why the writer structured it that way or the effect."
+  },
+  {
+    "id": "sa4",
+    "type": "ordering",
+    "specRef": "8700/1 Q3",
+    "marks": 2,
+    "prompt": "Put these in order, from the most basic to the strongest structural comment.",
+    "items": [
+      "Retelling what happens in order (plot summary)",
+      "Naming a structural technique (e.g. a shift in focus)",
+      "Explaining why the writer chose that structure and its effect on the reader"
+    ]
+  },
+  {
+    "id": "sa5",
+    "type": "short_answer",
+    "specRef": "8700/1 Q3",
+    "marks": 1,
+    "prompt": "What is it called when a writer deliberately doesn't reveal something yet, to build tension?",
+    "accepted": ["withholding information", "withholding"],
+    "explanation": "Withholding information — a common structural technique for building curiosity or tension."
+  },
+  {
+    "id": "sa6",
+    "type": "extended",
+    "specRef": "8700/1 Q3",
+    "marks": 8,
+    "prompt": "An extract opens with a calm description of a family breakfast, then shifts abruptly to a loud knock at the door, then ends with a close-up on the mother's frozen hand on the teapot. Analyse the writer's structural choices.",
+    "indicativeContent": [
+      "Opening on calm, ordinary domestic detail establishes a baseline the reader expects to continue",
+      "The abrupt shift (knock at the door) is a structural contrast that disrupts the calm and creates tension",
+      "Ending on a close-up/frozen image (the hand on the teapot) leaves the reader with a lingering, suspenseful image rather than resolution",
+      "The movement from wide domestic scene to one small frozen detail narrows the reader's focus at the moment of highest tension",
+      "Any other well-explained structural technique (pacing, withholding, repetition) with clear link to reader effect"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-2", "description": "Mostly describes what happens, with little structural comment." },
+      { "level": 2, "marksRange": "3-4", "description": "Identifies some structural features with limited explanation of effect." },
+      { "level": 3, "marksRange": "5-6", "description": "Clear explanation of structural choices and their effect on the reader." },
+      { "level": 4, "marksRange": "7-8", "description": "Detailed, perceptive tracking of how structure shapes the reader's response across the whole extract." }
+    ]
+  }
+]

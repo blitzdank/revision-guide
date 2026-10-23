@@ -12,16 +12,23 @@ export default async function HomePage() {
 
   let displayName = "";
   let nearestCountdown: Countdown | null = null;
+  let mistakesCount = 0;
   if (user) {
-    const [{ data: profile }, { data: countdowns }] = await Promise.all([
+    const [{ data: profile }, { data: countdowns }, { count }] = await Promise.all([
       supabase.from("profiles").select("display_name").eq("id", user.id).single(),
       supabase
         .from("countdowns")
         .select("id, name, exam_at, all_day")
         .order("exam_at", { ascending: true }),
+      supabase
+        .from("mistakes")
+        .select("id", { count: "exact", head: true })
+        .eq("user_id", user.id)
+        .eq("status", "open"),
     ]);
     displayName = profile?.display_name ?? "";
     nearestCountdown = ((countdowns as Countdown[] | null) ?? []).find((c) => !isPast(c)) ?? null;
+    mistakesCount = count ?? 0;
   }
 
   return (
@@ -44,16 +51,10 @@ export default async function HomePage() {
         )}
       </Link>
 
-      <div className="grid grid-cols-2 gap-4">
-        <section className="rounded-2xl bg-yellow/40 p-5">
-          <p className="text-sm text-yellow-strong">Due today</p>
-          <p className="mt-1 text-2xl font-bold text-text">0</p>
-        </section>
-        <section className="rounded-2xl bg-pink/25 p-5">
-          <p className="text-sm text-pink-strong">Mistakes bank</p>
-          <p className="mt-1 text-2xl font-bold text-text">0</p>
-        </section>
-      </div>
+      <Link href="/mistakes" className="rounded-2xl bg-pink/25 p-5">
+        <p className="text-sm text-pink-strong">Mistakes bank</p>
+        <p className="mt-1 text-2xl font-bold text-text">{mistakesCount}</p>
+      </Link>
 
       <section>
         <h2 className="mb-3 text-sm font-semibold text-muted">Subjects</h2>

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "vw1",
+    "type": "multiple_choice",
+    "specRef": "8700/2 Q5",
+    "marks": 1,
+    "prompt": "What should you decide first when planning a viewpoint answer?",
+    "options": [
+      "Your exact word count",
+      "Your position on the statement",
+      "Which technique to open with",
+      "The examiner's own opinion"
+    ],
+    "answerIndex": 1,
+    "explanation": "Decide your position first — you don't need to fully agree or disagree, but you need a clear stance to argue."
+  },
+  {
+    "id": "vw2",
+    "type": "short_answer",
+    "specRef": "8700/2 Q5",
+    "marks": 1,
+    "prompt": "Name the technique: briefly acknowledging the other side, then showing why your view still stands.",
+    "accepted": ["counter-argument and rebuttal", "counter argument and rebuttal", "rebuttal", "counter-argument"],
+    "explanation": "Counter-argument and rebuttal — one of the strongest ways to show a controlled argument."
+  },
+  {
+    "id": "vw3",
+    "type": "multiple_choice",
+    "specRef": "8700/2 Q5",
+    "marks": 1,
+    "prompt": "Grouping examples or ideas in threes for rhythm and emphasis is called:",
+    "options": ["Rule of three", "Rhetorical triangle", "Rebuttal", "Direct address"],
+    "answerIndex": 0,
+    "explanation": "Rule of three."
+  },
+  {
+    "id": "vw4",
+    "type": "ordering",
+    "specRef": "8700/2 Q5",
+    "marks": 3,
+    "prompt": "Put these planning steps in a sensible order.",
+    "items": ["Decide your position", "Plan 3-4 distinct points with reasons/examples", "Match tone and structure to the form (letter/article/speech)"]
+  },
+  {
+    "id": "vw5",
+    "type": "short_answer",
+    "specRef": "8700/2 Q5",
+    "marks": 1,
+    "prompt": "\"You\" and \"we\" used to draw the reader in and make the argument feel personal is called what?",
+    "accepted": ["direct address"],
+    "explanation": "Direct address."
+  },
+  {
+    "id": "vw6",
+    "type": "extended",
+    "specRef": "8700/2 Q5",
+    "marks": 40,
+    "prompt": "\"Schools should ban mobile phones completely.\" Write an article for a school newsletter arguing your point of view.",
+    "indicativeContent": [
+      "A clear, consistent position argued throughout, rather than drifting between views",
+      "3-4 distinct points, each developed with reasoning or example, not repeated restatements",
+      "At least one counter-argument briefly acknowledged and rebutted",
+      "Persuasive techniques used purposefully (rhetorical question, direct address, rule of three) in service of the argument, not just listed",
+      "Article conventions: headline, clear paragraphing, a tone suited to a school newsletter audience",
+      "Accurate spelling, punctuation and grammar throughout"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-9", "description": "A simple, one-sided viewpoint with limited structure; frequent errors that affect meaning." },
+      { "level": 2, "marksRange": "10-18", "description": "A clear viewpoint with some supporting points and basic persuasive technique; inconsistent accuracy." },
+      { "level": 3, "marksRange": "19-27", "description": "A well-organised argument with developed points, some counter-argument, and generally accurate SPaG." },
+      { "level": 4, "marksRange": "28-40", "description": "A compelling, tightly controlled argument with ambitious technique, convincing rebuttal, and consistently accurate SPaG." }
+    ]
+  }
+]

@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { CreateInviteForm } from "./create-invite-form";
+import { BackLink } from "@/components/back-link";
 
 export default async function AdminInvitesPage() {
   const supabase = await createClient();
@@ -10,6 +11,7 @@ export default async function AdminInvitesPage() {
 
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-6 p-4 pt-8 md:p-8">
+      <BackLink href="/me" label="Me" />
       <h1 className="text-2xl font-bold text-text">Invite codes</h1>
       <CreateInviteForm />
 

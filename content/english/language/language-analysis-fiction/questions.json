@@ -1,0 +1,92 @@
+[
+  {
+    "id": "la1",
+    "type": "multiple_choice",
+    "specRef": "8700/1 Q2",
+    "marks": 1,
+    "prompt": "\"The old house crouched at the end of the lane.\" Which technique is this?",
+    "options": ["Simile", "Personification", "Sibilance", "Alliteration"],
+    "answerIndex": 1,
+    "explanation": "\"Crouched\" gives the house a human/animal posture — personification."
+  },
+  {
+    "id": "la2",
+    "type": "multiple_choice",
+    "specRef": "8700/1 Q2",
+    "marks": 1,
+    "prompt": "\"Windows like hollow eyes\" is an example of:",
+    "options": ["Metaphor", "Simile", "Pathetic fallacy", "Onomatopoeia"],
+    "answerIndex": 1,
+    "explanation": "It uses \"like\" to compare the windows to eyes — a simile."
+  },
+  {
+    "id": "la3",
+    "type": "short_answer",
+    "specRef": "8700/1 Q2",
+    "marks": 1,
+    "prompt": "Name the technique: weather or nature reflecting a character's mood.",
+    "accepted": ["pathetic fallacy"],
+    "explanation": "Pathetic fallacy — a specific type of personification using nature/weather."
+  },
+  {
+    "id": "la4",
+    "type": "short_answer",
+    "specRef": "8700/1 Q2",
+    "marks": 1,
+    "prompt": "Name the technique: repeated \"s\" sounds creating a hissing effect.",
+    "accepted": ["sibilance"],
+    "explanation": "Sibilance — repeated \"s\"/soft consonant sounds."
+  },
+  {
+    "id": "la5",
+    "type": "ordering",
+    "specRef": "8700/1 Q2",
+    "marks": 3,
+    "prompt": "Put the steps of a language analysis point in the right order.",
+    "items": ["Point — name the technique", "Evidence — a short, precise quotation", "Effect — what it makes the reader feel, and why"]
+  },
+  {
+    "id": "la6",
+    "type": "multiple_choice",
+    "specRef": "8700/1 Q2",
+    "marks": 1,
+    "prompt": "Which is the stronger exam answer approach?",
+    "options": [
+      "List as many techniques as you can spot",
+      "Explain the effect of two or three techniques in depth",
+      "Quote whole sentences so the examiner has full context",
+      "Describe what happens in the extract"
+    ],
+    "answerIndex": 1,
+    "explanation": "Depth of explanation (the effect) scores higher than breadth of spotting."
+  },
+  {
+    "id": "la7",
+    "type": "short_answer",
+    "specRef": "8700/1 Q2",
+    "marks": 1,
+    "prompt": "\"Slender\" and \"skinny\" have a similar literal meaning but different ___?",
+    "accepted": ["connotation", "connotations"],
+    "explanation": "Connotation — the feeling or association a word carries beyond its dictionary meaning."
+  },
+  {
+    "id": "la8",
+    "type": "extended",
+    "specRef": "8700/1 Q2",
+    "marks": 8,
+    "prompt": "\"The storm hurled itself against the windows, and the old man's hands trembled like leaves in the wind.\" Analyse how the writer uses language in this extract.",
+    "indicativeContent": [
+      "Personification of the storm (\"hurled itself\") suggesting violence and aggression, framing nature as an active threat",
+      "Simile comparing the man's hands to \"leaves in the wind\" — fragility, age, and loss of control",
+      "The juxtaposition of a violent storm and a frail old man builds tension and vulnerability",
+      "Word choice: \"hurled\" (forceful verb) vs \"trembled\" (weak verb) contrasts power and powerlessness",
+      "Any other well-explained technique (sound devices, sentence structure, connotation) with a clear link to effect on the reader"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-2", "description": "Simple, general comments about language, with little or no reference to effect." },
+      { "level": 2, "marksRange": "3-4", "description": "Some relevant techniques identified, with attempts to explain effect." },
+      { "level": 3, "marksRange": "5-6", "description": "Clear explanation of how techniques create effect, using precise references." },
+      { "level": 4, "marksRange": "7-8", "description": "Detailed, perceptive analysis of language choices, exploring effect with subject terminology and close reference to word choice." }
+    ]
+  }
+]
