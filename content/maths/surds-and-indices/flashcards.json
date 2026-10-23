@@ -1,0 +1,12 @@
+[
+  { "id": "f1", "front": "$a^m \\times a^n = ?$", "back": "$a^{m+n}$" },
+  { "id": "f2", "front": "$a^m \\div a^n = ?$", "back": "$a^{m-n}$" },
+  { "id": "f3", "front": "$(a^m)^n = ?$", "back": "$a^{mn}$" },
+  { "id": "f4", "front": "What does $a^{-n}$ mean?", "back": "$\\dfrac{1}{a^n}$ — the reciprocal of the positive power." },
+  { "id": "f5", "front": "What does $a^{\\frac{1}{n}}$ mean?", "back": "$\\sqrt[n]{a}$ — the $n$th root of $a$." },
+  { "id": "f6", "front": "What's the easiest way to calculate $a^{\\frac{m}{n}}$?", "back": "Take the root first, then raise to the power: $a^{\\frac{m}{n}} = (\\sqrt[n]{a})^m$ — the numbers stay smaller." },
+  { "id": "f7", "front": "Simplify $\\sqrt{50}$", "back": "$5\\sqrt{2}$ — since $50 = 25 \\times 2$ and $\\sqrt{25}=5$." },
+  { "id": "f8", "front": "What's a surd?", "back": "A root that can't be simplified to a whole number, like $\\sqrt{2}$ — kept in exact form rather than rounded." },
+  { "id": "f9", "front": "How do you rationalise $\\dfrac{1}{\\sqrt{3}}$?", "back": "Multiply top and bottom by $\\sqrt{3}$: $\\dfrac{\\sqrt{3}}{3}$." },
+  { "id": "f10", "front": "How do you rationalise a denominator like $\\sqrt{2}+1$?", "back": "Multiply top and bottom by the same expression with the sign flipped: $\\sqrt{2}-1$." }
+]

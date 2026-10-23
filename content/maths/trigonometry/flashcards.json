@@ -1,0 +1,10 @@
+[
+  { "id": "f1", "front": "SOHCAHTOA — what does each part stand for?", "back": "Sin = Opposite/Hypotenuse, Cos = Adjacent/Hypotenuse, Tan = Opposite/Adjacent." },
+  { "id": "f2", "front": "Are SOHCAHTOA and the sine/cosine rules given in the GCSE exam?", "back": "Yes — all of them are on the AQA formula sheet." },
+  { "id": "f3", "front": "The sine rule", "back": "$\\dfrac{a}{\\sin A} = \\dfrac{b}{\\sin B} = \\dfrac{c}{\\sin C}$" },
+  { "id": "f4", "front": "When do you use the sine rule?", "back": "When you know a side and its opposite angle, plus one more side or angle." },
+  { "id": "f5", "front": "The cosine rule", "back": "$a^2 = b^2+c^2-2bc\\cos A$" },
+  { "id": "f6", "front": "When do you use the cosine rule?", "back": "When you know all three sides, or two sides and the angle between them." },
+  { "id": "f7", "front": "Area of a triangle using trigonometry", "back": "$\\text{Area} = \\dfrac{1}{2}ab\\sin C$ — use when you know two sides and the angle between them." },
+  { "id": "f8", "front": "How do you find an angle once you know, say, tan(θ) = 0.75?", "back": "Use the inverse function: $\\theta = \\tan^{-1}(0.75)$." }
+]

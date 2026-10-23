@@ -13,6 +13,7 @@ import {
   OrderingInput,
 } from "@/components/quiz-inputs";
 import { TutorPanel } from "@/components/tutor-panel";
+import { MathText } from "@/components/math-text";
 
 export function QuizRunner({
   subjectSlug,
@@ -85,27 +86,52 @@ function QuestionCard({
   onAnswered: (result: QuestionResult) => void;
 }) {
   const [result, setResult] = useState<QuestionResult | null>(null);
+  // Extended questions call onAnswered themselves (self-marking is part of
+  // their own flow) — this stops the shared Next button below from
+  // submitting the same answer a second time.
+  const [alreadyAnswered, setAlreadyAnswered] = useState(false);
 
   function check(answer: Parameters<typeof scoreQuestion>[1]) {
-    const r = scoreQuestion(question, answer);
-    setResult(r);
-    onAnswered(r);
+    setResult(scoreQuestion(question, answer));
+  }
+
+  // Short-answer auto-marking can't catch every valid way of writing an
+  // answer (e.g. a surd typed differently) — section 5 of the brief asks
+  // for a self-override specifically for this question type.
+  function markSelfCorrect() {
+    if (!result) return;
+    setResult({ ...result, correct: true, marksAwarded: result.marks });
   }
 
   if (result) {
     return (
       <div className="flex flex-col gap-4">
         <div className="rounded-2xl bg-surface p-5 shadow-sm">
-          <p className="mb-3 font-medium text-text">{question.prompt}</p>
+          <p className="mb-3 font-medium text-text">
+            <MathText text={question.prompt} />
+          </p>
           <p className={`mb-2 font-semibold ${result.correct ? "text-correct" : "text-wrong"}`}>
             {result.correct ? "Correct" : "Not quite"} · {result.marksAwarded}/{result.marks} marks
           </p>
-          {"explanation" in question && <p className="text-sm text-muted">{question.explanation}</p>}
+          {"explanation" in question && (
+            <p className="text-sm text-muted">
+              <MathText text={question.explanation} />
+            </p>
+          )}
           {"workedSolution" in question && (
-            <p className="text-sm text-muted">{(question as NumericQuestion).workedSolution}</p>
+            <p className="text-sm text-muted">
+              <MathText text={(question as NumericQuestion).workedSolution} />
+            </p>
           )}
           {question.type === "ordering" && (
-            <p className="text-sm text-muted">Correct order: {question.items.join(" → ")}</p>
+            <p className="text-sm text-muted">
+              Correct order: <MathText text={question.items.join(" → ")} />
+            </p>
+          )}
+          {question.type === "short_answer" && !result.correct && (
+            <button type="button" onClick={markSelfCorrect} className="mt-2 text-sm text-pink-strong underline">
+              Actually, my answer was right — mark myself correct
+            </button>
           )}
         </div>
         <ReportMistakeButton
@@ -115,7 +141,10 @@ function QuestionCard({
         />
         <button
           type="button"
-          onClick={onNext}
+          onClick={() => {
+            if (!alreadyAnswered) onAnswered(result);
+            onNext();
+          }}
           className="rounded-full bg-pink px-4 py-3 text-base font-semibold text-pink-strong"
         >
           Next
@@ -139,7 +168,10 @@ function QuestionCard({
           question={question}
           aiEnabled={aiEnabled}
           specContext={specContext}
-          onAnswered={onAnswered}
+          onAnswered={(r) => {
+            setAlreadyAnswered(true);
+            onAnswered(r);
+          }}
           setResult={setResult}
         />
       );
@@ -165,7 +197,9 @@ function ExtendedInput({
 
   return (
     <div className="flex flex-col gap-3">
-      <p className="rounded-2xl bg-surface p-5 font-medium text-text shadow-sm">{question.prompt}</p>
+      <p className="rounded-2xl bg-surface p-5 font-medium text-text shadow-sm">
+        <MathText text={question.prompt} />
+      </p>
 
       <textarea
         value={answer}
@@ -190,7 +224,9 @@ function ExtendedInput({
             <p className="mb-2 text-sm font-semibold text-muted">A strong answer would cover:</p>
             <ul className="list-disc space-y-1 pl-5 text-sm text-text">
               {question.indicativeContent.map((point, i) => (
-                <li key={i}>{point}</li>
+                <li key={i}>
+                  <MathText text={point} />
+                </li>
               ))}
             </ul>
           </div>
@@ -202,7 +238,9 @@ function ExtendedInput({
                   <span className="font-semibold text-text">
                     Level {level.level} ({level.marksRange} marks):
                   </span>{" "}
-                  <span className="text-muted">{level.description}</span>
+                  <span className="text-muted">
+                    <MathText text={level.description} />
+                  </span>
                 </div>
               ))}
             </div>

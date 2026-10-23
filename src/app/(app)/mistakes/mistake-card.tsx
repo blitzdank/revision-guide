@@ -10,6 +10,7 @@ import {
   OrderingInput,
 } from "@/components/quiz-inputs";
 import { TutorPanel } from "@/components/tutor-panel";
+import { MathText } from "@/components/math-text";
 import { createClient } from "@/lib/supabase/client";
 import { markMistakeCorrect, attachMistakePhoto } from "./actions";
 import type { MistakeView } from "@/lib/mistakes";
@@ -70,21 +71,27 @@ ${mistake.correctAnswer ? `Correct answer: ${mistake.correctAnswer}\n` : ""}${mi
           {mistake.topicName ? ` · ${mistake.topicName}` : ""} ·{" "}
           {mistake.source === "quiz" ? "Quiz" : "Real paper"}
         </p>
-        <p className="font-medium text-text">{mistake.label}</p>
+        <p className="font-medium text-text">
+          <MathText text={mistake.label} />
+        </p>
       </div>
 
       {mistake.herAnswer && (
         <p className="text-sm text-muted">
-          Your answer: <span className="text-wrong">{mistake.herAnswer}</span>
+          Your answer: <span className="text-wrong"><MathText text={mistake.herAnswer} /></span>
         </p>
       )}
 
       {showAnswer && mistake.correctAnswer && (
         <p className="text-sm text-text">
-          Correct answer: <span className="text-correct">{mistake.correctAnswer}</span>
+          Correct answer: <span className="text-correct"><MathText text={mistake.correctAnswer} /></span>
         </p>
       )}
-      {showAnswer && mistake.explanation && <p className="text-sm text-muted">{mistake.explanation}</p>}
+      {showAnswer && mistake.explanation && (
+        <p className="text-sm text-muted">
+          <MathText text={mistake.explanation} />
+        </p>
+      )}
 
       {mistake.source === "real_paper" && (
         <div>

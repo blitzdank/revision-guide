@@ -1,0 +1,100 @@
+[
+  {
+    "id": "si1",
+    "type": "multiple_choice",
+    "specRef": "8300 Higher — Number",
+    "marks": 1,
+    "prompt": "Simplify $a^5 \\div a^2$",
+    "options": ["$a^3$", "$a^7$", "$a^{10}$", "$a^{2.5}$"],
+    "answerIndex": 0,
+    "explanation": "Subtract the powers when dividing: $5 - 2 = 3$, so $a^3$."
+  },
+  {
+    "id": "si2",
+    "type": "multiple_choice",
+    "specRef": "8300 Higher — Number",
+    "marks": 1,
+    "prompt": "Simplify $(a^2)^4$",
+    "options": ["$a^6$", "$a^8$", "$a^{16}$", "$a^2$"],
+    "answerIndex": 1,
+    "explanation": "Multiply the powers: $2 \\times 4 = 8$, so $a^8$."
+  },
+  {
+    "id": "si3",
+    "type": "short_answer",
+    "specRef": "8300 Higher — Number",
+    "marks": 1,
+    "prompt": "What is $a^0$ (for any non-zero $a$)?",
+    "accepted": ["1"],
+    "explanation": "Any non-zero number to the power 0 is 1."
+  },
+  {
+    "id": "si4",
+    "type": "numeric",
+    "specRef": "8300 Higher — Number",
+    "marks": 2,
+    "prompt": "Work out $8^{\\frac{2}{3}}$",
+    "answer": 4,
+    "tolerance": 0,
+    "workedSolution": "$8^{\\frac{2}{3}} = (\\sqrt[3]{8})^2 = 2^2 = 4$ — take the cube root first, then square."
+  },
+  {
+    "id": "si5",
+    "type": "numeric",
+    "specRef": "8300 Higher — Number",
+    "marks": 2,
+    "prompt": "Work out $4^{-\\frac{1}{2}}$ as a decimal",
+    "answer": 0.5,
+    "tolerance": 0.01,
+    "workedSolution": "$4^{\\frac{1}{2}} = \\sqrt{4} = 2$, so $4^{-\\frac{1}{2}} = \\dfrac{1}{2} = 0.5$."
+  },
+  {
+    "id": "si6",
+    "type": "short_answer",
+    "specRef": "8300 Higher — Number",
+    "marks": 2,
+    "prompt": "Simplify $\\sqrt{72}$ (give your answer as \"a√b\", e.g. 6√2)",
+    "accepted": ["6√2", "6 root 2", "6sqrt2", "6 sqrt 2", "6√2 "],
+    "explanation": "$72 = 36 \\times 2$, so $\\sqrt{72} = \\sqrt{36} \\times \\sqrt{2} = 6\\sqrt{2}$."
+  },
+  {
+    "id": "si7",
+    "type": "short_answer",
+    "specRef": "8300 Higher — Number",
+    "marks": 2,
+    "prompt": "Rationalise the denominator of $\\dfrac{1}{\\sqrt{5}}$ (give your answer as \"√5/5\")",
+    "accepted": ["√5/5", "root 5 / 5", "sqrt5/5", "sqrt(5)/5"],
+    "explanation": "Multiply top and bottom by $\\sqrt{5}$: $\\dfrac{\\sqrt{5}}{5}$."
+  },
+  {
+    "id": "si8",
+    "type": "ordering",
+    "specRef": "8300 Higher — Number",
+    "marks": 3,
+    "prompt": "Put these steps in order for rationalising $\\dfrac{1}{\\sqrt{2}+1}$.",
+    "items": [
+      "Multiply top and bottom by (√2 − 1)",
+      "Expand the bottom: (√2+1)(√2−1) = 2 − 1 = 1",
+      "Write the final answer as √2 − 1"
+    ]
+  },
+  {
+    "id": "si9",
+    "type": "extended",
+    "specRef": "8300 Higher — Number",
+    "marks": 4,
+    "prompt": "Show that $(\\sqrt{5}+2)(\\sqrt{5}-2) = 1$, showing each step of your working.",
+    "indicativeContent": [
+      "Expand the brackets: (√5)(√5) + (√5)(−2) + (2)(√5) + (2)(−2)",
+      "Simplify: 5 − 2√5 + 2√5 − 4",
+      "The middle terms (−2√5 and +2√5) cancel out",
+      "Final result: 5 − 4 = 1, confirming the statement",
+      "A full-marks answer shows every step, not just the final answer"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1", "description": "Attempts to expand the brackets, with errors." },
+      { "level": 2, "marksRange": "2-3", "description": "Correct expansion, but doesn't clearly show the surd terms cancelling." },
+      { "level": 3, "marksRange": "4", "description": "Fully correct, clearly shown working from expansion to the final answer of 1." }
+    ]
+  }
+]

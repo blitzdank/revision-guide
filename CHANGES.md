@@ -1,5 +1,28 @@
 # Changes
 
+## Phase 7 — Maths, Higher tier (2026-10-23)
+
+- **KaTeX maths formatting**, wired into both guide text (Markdown `$...$`
+  via remark-math/rehype-katex) and quiz/flashcard plain strings (a new
+  `MathText` component) — fractions, powers, roots and equations render as
+  real typeset maths rather than plain `$...$` text.
+- **Six Higher-tier topics** with real content: Surds and indices,
+  Quadratic equations, Simultaneous equations, Compound growth and decay,
+  Trigonometry, and Probability trees — researched against AQA's official
+  8300 spec and formula sheet (confirmed SOHCAHTOA, the sine/cosine rules
+  and the quadratic formula are all given in the exam, not memorised).
+  `content/maths/spec.json` lists the fuller Higher syllabus; unwritten
+  topics show as "Coming soon."
+- **"Mark myself correct"** added to short-answer questions app-wide (a
+  brief requirement missed in Phase 3) — useful since some correct answers
+  (surd forms, etc.) are hard to type exactly.
+- **Numeric answers independently verified**: `scripts/verify-maths-answers.mjs`
+  recalculates every numeric question's answer from scratch and checks it
+  against the stored value — catches authoring slips (it actually caught
+  and fixed one, a depreciation example in the compound growth guide).
+  Documented in CONTENT.md as the process going forward, including for
+  Science.
+
 ## Phase 6 — History (2026-10-23)
 
 All five Edexcel (1HI0) topics, researched directly against Pearson's

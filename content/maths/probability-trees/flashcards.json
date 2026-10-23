@@ -1,0 +1,10 @@
+[
+  { "id": "f1", "front": "P(A and B) = ?", "back": "$P(A) \\times P(B \\mid A)$ — multiply along the branches." },
+  { "id": "f2", "front": "P(A or B) = ?", "back": "$P(A) + P(B) - P(A \\text{ and } B)$ — add, then subtract the overlap." },
+  { "id": "f3", "front": "\"And\" vs \"or\" — which operation for each?", "back": "\"And\" → multiply. \"Or\" → add (then subtract the overlap)." },
+  { "id": "f4", "front": "What does \"without replacement\" tell you about two events?", "back": "They're dependent — the second pick's probabilities change because one item is now missing." },
+  { "id": "f5", "front": "What does \"with replacement\" tell you about two events?", "back": "They're independent — the probabilities stay the same for every pick." },
+  { "id": "f6", "front": "Quickest way to find P(at least one success)?", "back": "$1 - P(\\text{none})$ — usually much quicker than adding up every other outcome." },
+  { "id": "f7", "front": "On a tree diagram, what do the branches from the same point always add up to?", "back": "1 (the probabilities of all outcomes at that point)." },
+  { "id": "f8", "front": "How do you find the probability of an outcome that can happen more than one way (e.g. \"exactly one red\")?", "back": "Find each path that gives that outcome, multiply along each path, then add the paths together." }
+]

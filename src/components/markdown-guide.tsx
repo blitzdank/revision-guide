@@ -1,16 +1,20 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 
 /**
  * Renders a topic's guide.md. By convention (see CONTENT.md): **bold** marks
- * a key term, and every blockquote is an "exam tip" box — guide.md files
- * don't use blockquotes for anything else.
+ * a key term, every blockquote is an "exam tip" box (guide.md files don't
+ * use blockquotes for anything else), and $...$ / $$...$$ is LaTeX maths
+ * (Maths/Science guides), rendered with KaTeX.
  */
 export function MarkdownGuide({ markdown }: { markdown: string }) {
   return (
     <div className="prose-guide flex flex-col gap-4 text-text">
       <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
+        remarkPlugins={[remarkGfm, remarkMath]}
+        rehypePlugins={[rehypeKatex]}
         components={{
           h2: ({ children }) => (
             <h2 className="mt-2 text-lg font-bold text-text first:mt-0">{children}</h2>

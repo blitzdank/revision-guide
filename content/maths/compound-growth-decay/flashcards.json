@@ -1,0 +1,8 @@
+[
+  { "id": "f1", "front": "Compound growth/decay formula", "back": "Final amount = Initial amount × (multiplier)^n — given on the AQA formula sheet." },
+  { "id": "f2", "front": "Multiplier for a 7% increase per year", "back": "$1 + \\dfrac{7}{100} = 1.07$" },
+  { "id": "f3", "front": "Multiplier for a 20% decrease per year", "back": "$1 - \\dfrac{20}{100} = 0.8$" },
+  { "id": "f4", "front": "Why shouldn't you round the multiplier early in a calculation?", "back": "It loses accuracy — only round your final answer." },
+  { "id": "f5", "front": "How do you solve a reverse-percentage problem (you know the final amount, want the original)?", "back": "Divide by the multiplier instead of multiplying by it." },
+  { "id": "f6", "front": "Why is \"add the percentage back on\" wrong for reverse percentage problems?", "back": "The percentage was taken of the ORIGINAL amount, not the final amount — so adding it back to the final amount gives the wrong number." }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": "f1", "front": "Elimination method — what do you do first?", "back": "Make the coefficient of one variable match in both equations (by multiplying), so adding or subtracting removes it." },
+  { "id": "f2", "front": "After eliminating one variable and solving, what should you do?", "back": "Substitute the value back into one original equation to find the other variable, then check it in the OTHER equation." },
+  { "id": "f3", "front": "When must you use substitution rather than elimination?", "back": "When one equation is linear and the other is quadratic (you can't eliminate between a linear and quadratic term)." },
+  { "id": "f4", "front": "How many solutions does a linear/quadratic simultaneous pair usually have?", "back": "Two — unless the line is a tangent to the curve (one repeated solution) or misses it entirely (no real solutions)." },
+  { "id": "f5", "front": "Graphically, what does the solution to simultaneous equations represent?", "back": "The point(s) where the two graphs intersect." },
+  { "id": "f6", "front": "Substitution method — what's the first step?", "back": "Rearrange one equation to make a variable the subject, then substitute it into the other equation." }
+]

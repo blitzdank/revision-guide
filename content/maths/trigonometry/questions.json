@@ -1,0 +1,89 @@
+[
+  {
+    "id": "tr1",
+    "type": "multiple_choice",
+    "specRef": "8300 Higher — Geometry and measures",
+    "marks": 1,
+    "prompt": "In SOHCAHTOA, which ratio is $\\tan A$?",
+    "options": [
+      "Opposite ÷ Hypotenuse",
+      "Adjacent ÷ Hypotenuse",
+      "Opposite ÷ Adjacent",
+      "Hypotenuse ÷ Opposite"
+    ],
+    "answerIndex": 2,
+    "explanation": "Tan A = Opposite ÷ Adjacent (\"TOA\")."
+  },
+  {
+    "id": "tr2",
+    "type": "numeric",
+    "specRef": "8300 Higher — Geometry and measures",
+    "marks": 2,
+    "prompt": "A right-angled triangle has a hypotenuse of 12 cm and one angle of 50°. Find the opposite side, to 2 d.p.",
+    "answer": 9.19,
+    "tolerance": 0.02,
+    "unit": "cm",
+    "workedSolution": "$\\sin(50°) = \\dfrac{\\text{opp}}{12} \\Rightarrow \\text{opp} = 12 \\times \\sin(50°) = 9.19$ cm."
+  },
+  {
+    "id": "tr3",
+    "type": "numeric",
+    "specRef": "8300 Higher — Geometry and measures",
+    "marks": 2,
+    "prompt": "A right-angled triangle has an opposite side of 5 cm and an adjacent side of 12 cm. Find the hypotenuse.",
+    "answer": 13,
+    "tolerance": 0,
+    "unit": "cm",
+    "workedSolution": "Pythagoras: $\\sqrt{5^2+12^2} = \\sqrt{25+144} = \\sqrt{169} = 13$ cm."
+  },
+  {
+    "id": "tr4",
+    "type": "numeric",
+    "specRef": "8300 Higher — Geometry and measures",
+    "marks": 2,
+    "prompt": "In a right-angled triangle, the opposite side is 5 cm and the hypotenuse is 13 cm. Find the angle, to 1 d.p.",
+    "answer": 22.6,
+    "tolerance": 0.1,
+    "unit": "°",
+    "workedSolution": "$\\sin(\\theta) = \\dfrac{5}{13} \\Rightarrow \\theta = \\sin^{-1}(0.3846) = 22.6°$."
+  },
+  {
+    "id": "tr5",
+    "type": "multiple_choice",
+    "specRef": "8300 Higher — Geometry and measures",
+    "marks": 1,
+    "prompt": "You know two sides of a triangle and the angle between them, and want to find the third side. Which rule?",
+    "options": ["Sine rule", "Cosine rule", "SOHCAHTOA", "Pythagoras"],
+    "answerIndex": 1,
+    "explanation": "The cosine rule handles two sides + the included angle (SOHCAHTOA and Pythagoras only work for right-angled triangles)."
+  },
+  {
+    "id": "tr6",
+    "type": "numeric",
+    "specRef": "8300 Higher — Geometry and measures",
+    "marks": 3,
+    "prompt": "A triangle has sides $b=10$, $c=14$, with an angle $A=50°$ between them. Find side $a$, to 2 d.p.",
+    "answer": 10.77,
+    "tolerance": 0.02,
+    "workedSolution": "$a^2 = 10^2+14^2-2(10)(14)\\cos(50°) = 296 - 179.98 = 116.02$, so $a = \\sqrt{116.02} = 10.77$."
+  },
+  {
+    "id": "tr7",
+    "type": "extended",
+    "specRef": "8300 Higher — Geometry and measures",
+    "marks": 5,
+    "prompt": "A triangle has sides $a=7$, $b=9$, with an angle $C=45°$ between them. Find (a) the length of side $c$, and (b) the area of the triangle. Give both answers to 2 d.p.",
+    "indicativeContent": [
+      "For side c, use the cosine rule: c² = a² + b² − 2ab cos C = 49 + 81 − 2(7)(9)cos(45°)",
+      "c² = 130 − 89.10 = 40.90, so c = √40.90 = 6.40",
+      "For the area, use Area = ½ab sin C = ½(7)(9)sin(45°)",
+      "Area = 31.5 × 0.7071 = 22.27",
+      "A full-marks answer correctly applies both formulae (both given on the formula sheet) and rounds both final answers to 2 d.p. as asked"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-2", "description": "Attempts one part (cosine rule or area) with the correct method but calculation errors." },
+      { "level": 2, "marksRange": "3-4", "description": "One part fully correct, the other has a minor error or is incomplete." },
+      { "level": 3, "marksRange": "5", "description": "Both c ≈ 6.40 and area ≈ 22.27 correctly found and clearly shown." }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "qualification": "AQA GCSE Mathematics (8300), Higher tier",
+  "papers": [
+    {
+      "id": "number",
+      "name": "Number",
+      "topics": [
+        { "slug": "surds-and-indices", "name": "Surds and indices", "specRef": "8300 Higher — Number" },
+        { "slug": "standard-form", "name": "Standard form", "specRef": "8300 Higher — Number" },
+        { "slug": "number-theory", "name": "Factors, multiples and primes", "specRef": "8300 Higher — Number" }
+      ]
+    },
+    {
+      "id": "algebra",
+      "name": "Algebra",
+      "topics": [
+        { "slug": "quadratic-equations", "name": "Quadratic equations", "specRef": "8300 Higher — Algebra" },
+        { "slug": "simultaneous-equations", "name": "Simultaneous equations", "specRef": "8300 Higher — Algebra" },
+        { "slug": "inequalities", "name": "Inequalities", "specRef": "8300 Higher — Algebra" },
+        { "slug": "sequences", "name": "Sequences", "specRef": "8300 Higher — Algebra" },
+        { "slug": "graphs", "name": "Graphs", "specRef": "8300 Higher — Algebra" }
+      ]
+    },
+    {
+      "id": "ratio",
+      "name": "Ratio, proportion and rates of change",
+      "topics": [
+        { "slug": "compound-growth-decay", "name": "Compound growth and decay", "specRef": "8300 Higher — Ratio, proportion and rates of change" },
+        { "slug": "ratio-and-proportion", "name": "Ratio and proportion", "specRef": "8300 Higher — Ratio, proportion and rates of change" }
+      ]
+    },
+    {
+      "id": "geometry",
+      "name": "Geometry and measures",
+      "topics": [
+        { "slug": "trigonometry", "name": "Trigonometry", "specRef": "8300 Higher — Geometry and measures" },
+        { "slug": "circle-theorems", "name": "Circle theorems", "specRef": "8300 Higher — Geometry and measures" },
+        { "slug": "vectors", "name": "Vectors", "specRef": "8300 Higher — Geometry and measures" },
+        { "slug": "area-and-volume", "name": "Area and volume", "specRef": "8300 Higher — Geometry and measures" }
+      ]
+    },
+    {
+      "id": "probability",
+      "name": "Probability",
+      "topics": [
+        { "slug": "probability-trees", "name": "Probability trees and combined events", "specRef": "8300 Higher — Probability" }
+      ]
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics",
+      "topics": [
+        { "slug": "averages-and-spread", "name": "Averages and spread", "specRef": "8300 Higher — Statistics" },
+        { "slug": "charts-and-graphs", "name": "Charts and graphs", "specRef": "8300 Higher — Statistics" }
+      ]
+    }
+  ]
+}

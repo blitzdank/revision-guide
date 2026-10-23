@@ -1,0 +1,10 @@
+[
+  { "id": "f1", "front": "The quadratic formula", "back": "$x = \\dfrac{-b \\pm \\sqrt{b^2-4ac}}{2a}$ — given on the AQA formula sheet." },
+  { "id": "f2", "front": "When factorising $x^2+bx+c$, what are you looking for?", "back": "Two numbers that multiply to give $c$ and add to give $b$." },
+  { "id": "f3", "front": "What is the discriminant, and what formula gives it?", "back": "$b^2-4ac$ — tells you how many real solutions a quadratic has." },
+  { "id": "f4", "front": "What does a positive discriminant mean?", "back": "Two different real solutions." },
+  { "id": "f5", "front": "What does a discriminant of zero mean?", "back": "Exactly one solution (a repeated root) — the graph just touches the x-axis." },
+  { "id": "f6", "front": "What does a negative discriminant mean?", "back": "No real solutions — the graph doesn't cross the x-axis." },
+  { "id": "f7", "front": "How do you find $p$ and $q$ when completing the square for $x^2+bx+c = (x+p)^2+q$?", "back": "$p$ is half of $b$; $q = c - p^2$." },
+  { "id": "f8", "front": "Why is completing the square useful for a quadratic graph?", "back": "It directly gives the turning point (minimum or maximum) as $(-p, q)$." }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "cg1",
+    "type": "multiple_choice",
+    "specRef": "8300 Higher — Ratio, proportion and rates of change",
+    "marks": 1,
+    "prompt": "What multiplier represents a 5% increase?",
+    "options": ["0.05", "1.05", "5", "1.5"],
+    "answerIndex": 1,
+    "explanation": "$1 + \\dfrac{5}{100} = 1.05$."
+  },
+  {
+    "id": "cg2",
+    "type": "numeric",
+    "specRef": "8300 Higher — Ratio, proportion and rates of change",
+    "marks": 3,
+    "prompt": "£1000 is invested at 4% compound interest per year. What is it worth after 3 years, to the nearest penny?",
+    "answer": 1124.86,
+    "tolerance": 0.01,
+    "unit": "£",
+    "workedSolution": "$1000 \\times 1.04^3 = 1000 \\times 1.124864 = £1124.86$ (to the nearest penny)."
+  },
+  {
+    "id": "cg3",
+    "type": "numeric",
+    "specRef": "8300 Higher — Ratio, proportion and rates of change",
+    "marks": 2,
+    "prompt": "A car worth £20,000 depreciates by 10% per year. What is it worth after 2 years?",
+    "answer": 16200,
+    "tolerance": 0,
+    "unit": "£",
+    "workedSolution": "$20000 \\times 0.9^2 = 20000 \\times 0.81 = £16{,}200$."
+  },
+  {
+    "id": "cg4",
+    "type": "multiple_choice",
+    "specRef": "8300 Higher — Ratio, proportion and rates of change",
+    "marks": 1,
+    "prompt": "You know the final amount after a known percentage change and want to find the original amount. What do you do?",
+    "options": [
+      "Multiply by the multiplier",
+      "Divide by the multiplier",
+      "Add the percentage to the final amount",
+      "Subtract the percentage from the final amount"
+    ],
+    "answerIndex": 1,
+    "explanation": "Reverse percentage problems divide by the multiplier, since the percentage was taken of the original amount."
+  },
+  {
+    "id": "cg5",
+    "type": "numeric",
+    "specRef": "8300 Higher — Ratio, proportion and rates of change",
+    "marks": 2,
+    "prompt": "After a 20% discount, an item costs £64. What was the original price?",
+    "answer": 80,
+    "tolerance": 0,
+    "unit": "£",
+    "workedSolution": "Multiplier = $1 - \\dfrac{20}{100} = 0.8$. Original price = $64 \\div 0.8 = £80$."
+  },
+  {
+    "id": "cg6",
+    "type": "ordering",
+    "specRef": "8300 Higher — Ratio, proportion and rates of change",
+    "marks": 3,
+    "prompt": "Put these steps in order for a compound interest calculation.",
+    "items": [
+      "Work out the multiplier (1 + rate/100)",
+      "Raise the multiplier to the power of the number of time periods",
+      "Multiply by the initial amount",
+      "Round the final answer appropriately"
+    ]
+  },
+  {
+    "id": "cg7",
+    "type": "extended",
+    "specRef": "8300 Higher — Ratio, proportion and rates of change",
+    "marks": 4,
+    "prompt": "An investment of £800 grows to £968 over 2 years at a constant annual compound interest rate. Find the annual rate.",
+    "indicativeContent": [
+      "Set up: 968 = 800 × m², where m is the multiplier",
+      "Divide: m² = 968 ÷ 800 = 1.21",
+      "Square root: m = √1.21 = 1.1",
+      "Since m = 1 + r/100, the rate r = 10%",
+      "A full-marks answer shows each step and states the final rate clearly as a percentage"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1", "description": "Sets up the equation 968 = 800 × m² correctly but doesn't solve it fully." },
+      { "level": 2, "marksRange": "2-3", "description": "Correctly finds m = 1.1 but doesn't convert it to a percentage rate, or makes a small error." },
+      { "level": 3, "marksRange": "4", "description": "Fully correct: finds m = 1.1 and clearly states the rate as 10%." }
+    ]
+  }
+]

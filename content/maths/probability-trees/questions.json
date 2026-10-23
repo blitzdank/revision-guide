@@ -1,0 +1,94 @@
+[
+  {
+    "id": "pt1",
+    "type": "multiple_choice",
+    "specRef": "8300 Higher — Probability",
+    "marks": 1,
+    "prompt": "For independent events A and B, which operation finds P(A and B)?",
+    "options": ["Add", "Subtract", "Multiply", "Divide"],
+    "answerIndex": 2,
+    "explanation": "P(A and B) = P(A) × P(B) for independent events — multiply along the branches."
+  },
+  {
+    "id": "pt2",
+    "type": "numeric",
+    "specRef": "8300 Higher — Probability",
+    "marks": 2,
+    "prompt": "Events A and B are independent: P(A) = 0.3, P(B) = 0.5. Find P(A and B).",
+    "answer": 0.15,
+    "tolerance": 0.001,
+    "workedSolution": "$0.3 \\times 0.5 = 0.15$."
+  },
+  {
+    "id": "pt3",
+    "type": "numeric",
+    "specRef": "8300 Higher — Probability",
+    "marks": 2,
+    "prompt": "Events A and B: P(A) = 0.3, P(B) = 0.5, P(A and B) = 0.15. Find P(A or B).",
+    "answer": 0.65,
+    "tolerance": 0.001,
+    "workedSolution": "$P(A)+P(B)-P(A \\text{ and } B) = 0.3+0.5-0.15 = 0.65$."
+  },
+  {
+    "id": "pt4",
+    "type": "numeric",
+    "specRef": "8300 Higher — Probability",
+    "marks": 2,
+    "prompt": "A bag has 4 red and 6 blue balls. One is picked, replaced, then another is picked. Find P(both red), as a decimal.",
+    "answer": 0.16,
+    "tolerance": 0.001,
+    "workedSolution": "With replacement, both picks are independent: $\\dfrac{4}{10} \\times \\dfrac{4}{10} = 0.16$."
+  },
+  {
+    "id": "pt5",
+    "type": "numeric",
+    "specRef": "8300 Higher — Probability",
+    "marks": 3,
+    "prompt": "The same bag (4 red, 6 blue) — now two balls are picked WITHOUT replacement. Find P(both red), as a decimal to 3 d.p.",
+    "answer": 0.133,
+    "tolerance": 0.001,
+    "workedSolution": "$\\dfrac{4}{10} \\times \\dfrac{3}{9} = \\dfrac{12}{90} = 0.133$ (3 d.p.) — the second pick has one fewer red ball and one fewer ball overall."
+  },
+  {
+    "id": "pt6",
+    "type": "numeric",
+    "specRef": "8300 Higher — Probability",
+    "marks": 3,
+    "prompt": "Same bag, without replacement. Find P(at least one red), as a decimal to 3 d.p.",
+    "answer": 0.667,
+    "tolerance": 0.001,
+    "workedSolution": "$P(\\text{no red}) = \\dfrac{6}{10}\\times\\dfrac{5}{9} = \\dfrac{30}{90} = \\dfrac{1}{3}$, so $P(\\text{at least one red}) = 1-\\dfrac{1}{3} = 0.667$ (3 d.p.)."
+  },
+  {
+    "id": "pt7",
+    "type": "ordering",
+    "specRef": "8300 Higher — Probability",
+    "marks": 3,
+    "prompt": "Put these steps in order for finding P(at least one success) in two picks without replacement.",
+    "items": [
+      "Find P(no success) on the first pick",
+      "Find P(no success) on the second pick, adjusting for one fewer item",
+      "Multiply the two \"no success\" probabilities together",
+      "Subtract the result from 1"
+    ]
+  },
+  {
+    "id": "pt8",
+    "type": "extended",
+    "specRef": "8300 Higher — Probability",
+    "marks": 5,
+    "prompt": "A bag has 5 yellow and 3 green counters. Two counters are picked without replacement. Find the probability of exactly one yellow counter.",
+    "indicativeContent": [
+      "Two paths give exactly one yellow: (yellow, green) and (green, yellow)",
+      "P(yellow, green) = (5/8) × (3/7) = 15/56",
+      "P(green, yellow) = (3/8) × (5/7) = 15/56",
+      "Add the two paths: 15/56 + 15/56 = 30/56 = 15/28 ≈ 0.536",
+      "A full-marks answer identifies both paths, calculates each correctly, and adds them together (not just finds one path)"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-2", "description": "Identifies one correct path and calculates its probability correctly." },
+      { "level": 2, "marksRange": "3-4", "description": "Identifies both paths but makes an error in one calculation or in adding them." },
+      { "level": 3, "marksRange": "5", "description": "Both paths correctly calculated and added: 30/56 = 15/28 ≈ 0.536." }
+    ]
+  }
+]

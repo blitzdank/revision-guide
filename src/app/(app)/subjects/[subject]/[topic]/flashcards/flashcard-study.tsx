@@ -5,6 +5,7 @@ import Link from "next/link";
 import { recordReview } from "./actions";
 import type { StudyCard } from "@/lib/flashcards";
 import { ReportMistakeButton } from "@/components/report-mistake-button";
+import { MathText } from "@/components/math-text";
 
 const SWIPE_THRESHOLD = 60;
 
@@ -76,7 +77,9 @@ export function FlashcardStudy({
         }}
         className="flex min-h-56 w-full max-w-sm items-center justify-center rounded-3xl bg-surface p-8 text-center shadow-sm"
       >
-        <p className="text-lg font-medium text-text">{flipped ? current.back : current.front}</p>
+        <p className="text-lg font-medium text-text">
+          <MathText text={flipped ? current.back : current.front} />
+        </p>
       </button>
 
       {!current.isUserCard && (
