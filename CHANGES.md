@@ -1,5 +1,26 @@
 # Changes
 
+## Phase 5 — AI tutor (2026-10-23)
+
+- AI tutor, off by default — only turns on once `ANTHROPIC_API_KEY` is set
+  (SETUP.md section 7). Every AI button is hidden until then; verified the
+  rest of the app works identically with it off.
+- Three entry points, each giving the tutor the question, mark scheme and
+  her answer for board/tier-specific help: **Get feedback** on a written
+  extended-answer quiz question, **Explain this** on a quiz mistake, and
+  **Help with this question** on a real-paper mistake (uses Claude's vision
+  to read an attached photo of the question).
+- Photo upload for real-paper mistakes, straight to her own folder in the
+  `mistake-photos` Storage bucket — works independently of the AI tutor, so
+  photos can be attached ahead of turning AI on.
+- Guardrails baked into the system prompt: stays on her GCSE subjects only,
+  teaches with hints before full answers, age-appropriate and concise,
+  never states a mark/grade as certain.
+- Cost controls: 30 AI messages/day per user by default
+  (`AI_DAILY_MESSAGE_LIMIT`), max response length capped, cost-efficient
+  model by default (`ANTHROPIC_MODEL`, defaults to `claude-haiku-5-5`) —
+  all three configurable without a code change.
+
 ## Phase 4 — Mistakes bank and Report a mistake (2026-10-23)
 
 - **Mistakes bank** (`/mistakes`): real data now, filterable by subject and

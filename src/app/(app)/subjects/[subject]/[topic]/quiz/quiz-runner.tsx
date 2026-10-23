@@ -12,17 +12,22 @@ import {
   NumericInput,
   OrderingInput,
 } from "@/components/quiz-inputs";
+import { TutorPanel } from "@/components/tutor-panel";
 
 export function QuizRunner({
   subjectSlug,
   topicSlug,
   topicScope,
   questions,
+  aiEnabled,
+  specContext,
 }: {
   subjectSlug: string;
   topicSlug: string;
   topicScope: string;
   questions: QuizQuestion[];
+  aiEnabled: boolean;
+  specContext: string;
 }) {
   const [index, setIndex] = useState(0);
   const [results, setResults] = useState<QuestionResult[]>([]);
@@ -55,6 +60,8 @@ export function QuizRunner({
         key={question.id}
         question={question}
         topicScope={topicScope}
+        aiEnabled={aiEnabled}
+        specContext={specContext}
         onNext={() => setIndex((i) => i + 1)}
         onAnswered={handleResult}
       />
@@ -65,11 +72,15 @@ export function QuizRunner({
 function QuestionCard({
   question,
   topicScope,
+  aiEnabled,
+  specContext,
   onNext,
   onAnswered,
 }: {
   question: QuizQuestion;
   topicScope: string;
+  aiEnabled: boolean;
+  specContext: string;
   onNext: () => void;
   onAnswered: (result: QuestionResult) => void;
 }) {
@@ -123,16 +134,28 @@ function QuestionCard({
     case "ordering":
       return <OrderingInput question={question} onCheck={check} />;
     case "extended":
-      return <ExtendedInput question={question} onAnswered={onAnswered} setResult={setResult} />;
+      return (
+        <ExtendedInput
+          question={question}
+          aiEnabled={aiEnabled}
+          specContext={specContext}
+          onAnswered={onAnswered}
+          setResult={setResult}
+        />
+      );
   }
 }
 
 function ExtendedInput({
   question,
+  aiEnabled,
+  specContext,
   onAnswered,
   setResult,
 }: {
   question: ExtendedQuestion;
+  aiEnabled: boolean;
+  specContext: string;
   onAnswered: (result: QuestionResult) => void;
   setResult: (r: QuestionResult) => void;
 }) {
@@ -184,6 +207,14 @@ function ExtendedInput({
               ))}
             </div>
           </div>
+          {aiEnabled && (
+            <TutorPanel
+              triggerLabel="Get feedback"
+              initialPrompt="Give me feedback on my answer: a hint toward what's missing, and an estimated mark."
+              context={`Subject context: ${specContext}\n\nQuestion (${question.marks} marks): ${question.prompt}\n\nWhat a strong answer covers:\n${question.indicativeContent.map((p) => `- ${p}`).join("\n")}\n\nMark bands:\n${question.levelDescriptors.map((l) => `Level ${l.level} (${l.marksRange}): ${l.description}`).join("\n")}\n\nHer answer:\n${answer}`}
+            />
+          )}
+
           <label className="flex flex-col gap-1">
             <span className="text-sm font-medium text-text">
               Your mark (out of {question.marks})

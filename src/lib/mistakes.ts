@@ -19,6 +19,9 @@ export type MistakeView = {
   /** The full question, for the "Retry" input — null if it's since been
    * removed from the content files, or this is a real-paper mistake. */
   question: QuizQuestion | null;
+  /** Supabase Storage path in the "mistake-photos" bucket, if she's
+   * attached a photo of a real-paper question. */
+  photoPath: string | null;
   timesRight: number;
   createdAt: string;
 };
@@ -30,6 +33,7 @@ type MistakeRow = {
   question_id: string | null;
   paper_ref: string | null;
   her_answer: string | null;
+  photo_path: string | null;
   times_right: number;
   created_at: string;
 };
@@ -50,6 +54,7 @@ function toView(row: MistakeRow): MistakeView {
       correctAnswer: null,
       explanation: null,
       question: null,
+      photoPath: row.photo_path,
       timesRight: row.times_right,
       createdAt: row.created_at,
     };
@@ -68,6 +73,7 @@ function toView(row: MistakeRow): MistakeView {
     correctAnswer: resolved ? describeCorrectAnswer(resolved.question) : null,
     explanation: resolved && "explanation" in resolved.question ? resolved.question.explanation : null,
     question: resolved?.question ?? null,
+    photoPath: row.photo_path,
     timesRight: row.times_right,
     createdAt: row.created_at,
   };
@@ -77,7 +83,7 @@ export async function getOpenMistakes(userId: string): Promise<MistakeView[]> {
   const supabase = await createClient();
   const { data } = await supabase
     .from("mistakes")
-    .select("id, source, subject, question_id, paper_ref, her_answer, times_right, created_at")
+    .select("id, source, subject, question_id, paper_ref, her_answer, photo_path, times_right, created_at")
     .eq("user_id", userId)
     .eq("status", "open")
     .order("created_at", { ascending: false });

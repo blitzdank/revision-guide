@@ -4,7 +4,13 @@ import { useMemo, useState } from "react";
 import { MistakeCard } from "./mistake-card";
 import type { MistakeView } from "@/lib/mistakes";
 
-export function MistakesManager({ mistakes }: { mistakes: MistakeView[] }) {
+export function MistakesManager({
+  mistakes,
+  aiEnabled,
+}: {
+  mistakes: MistakeView[];
+  aiEnabled: boolean;
+}) {
   const [subjectFilter, setSubjectFilter] = useState("all");
   const [topicFilter, setTopicFilter] = useState("all");
 
@@ -75,7 +81,7 @@ export function MistakesManager({ mistakes }: { mistakes: MistakeView[] }) {
       ) : (
         <div className="flex flex-col gap-3">
           {filtered.map((mistake) => (
-            <MistakeCard key={mistake.id} mistake={mistake} />
+            <MistakeCard key={mistake.id} mistake={mistake} aiEnabled={aiEnabled} />
           ))}
         </div>
       )}

@@ -39,3 +39,18 @@ export async function markMistakeCorrect(mistakeId: string) {
   revalidatePath("/mistakes");
   revalidatePath("/");
 }
+
+/** Records the Storage path after she's uploaded a photo of a real-paper
+ * question (the upload itself happens client-side, straight to her own
+ * folder in the "mistake-photos" bucket, which Storage RLS already
+ * restricts to her). */
+export async function attachMistakePhoto(mistakeId: string, photoPath: string) {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return;
+
+  await supabase.from("mistakes").update({ photo_path: photoPath }).eq("id", mistakeId);
+  revalidatePath("/mistakes");
+}

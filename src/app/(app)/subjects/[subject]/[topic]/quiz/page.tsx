@@ -3,6 +3,7 @@ import { resolveTopic } from "@/lib/content/resolve";
 import { loadQuestions, topicId } from "@/lib/content/load";
 import { QuizRunner } from "./quiz-runner";
 import { BackLink } from "@/components/back-link";
+import { isAiEnabled } from "@/lib/ai/tutor";
 
 const DEFAULT_QUIZ_LENGTH = 10;
 
@@ -36,6 +37,8 @@ export default async function QuizPage({
         topicSlug={topicSlug}
         topicScope={topicId(topic)}
         questions={questions}
+        aiEnabled={isAiEnabled()}
+        specContext={`${topic.strandName ? `${topic.strandName} — ` : ""}${topic.paperName} (${topic.specRef})`}
       />
     </div>
   );

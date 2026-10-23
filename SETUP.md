@@ -139,8 +139,34 @@ and open `http://localhost:3000`.
 
 ---
 
-## Later phases
+## 7. Turn on the AI tutor (optional)
 
-- **Phase 5 (AI tutor)**: adds an `ANTHROPIC_API_KEY` variable. SETUP.md will
-  get a new section then, including setting a monthly spend limit in the
-  Claude Console.
+The app works completely fine without this — every AI button stays hidden
+until you add a key. Do this whenever you're ready.
+
+1. Go to [console.anthropic.com](https://console.anthropic.com) and sign
+   in or create an account.
+2. **Important — set a spend limit first**, so you can't be surprised by a
+   bill: go to **Settings → Limits** (or similar — Anthropic's console
+   changes its layout from time to time) and set a monthly spend limit.
+   A few dollars is plenty to start with; the app also limits her to 30 AI
+   messages a day on top of that.
+3. Go to **API Keys → Create Key**, name it `revision-guide`, and copy the
+   key (starts with `sk-ant-...`). You'll only see it once.
+4. Add it to `.env.local` (for local testing) and/or Railway's Variables
+   tab (for the live app) as `ANTHROPIC_API_KEY`. **Never paste this key
+   into chat with Claude Code** — it's a real secret, unlike the Supabase
+   anon key. Add it yourself directly in the file or Railway's dashboard,
+   then just tell Claude Code "I've added the key" so it can restart things
+   and test with you.
+5. Restart the dev server (or redeploy on Railway) for the new variable to
+   take effect.
+
+Two more variables are optional, with sensible defaults if you skip them:
+- `ANTHROPIC_MODEL` — which Claude model to use. Defaults to a
+  cost-efficient one (`claude-haiku-5-5`).
+- `AI_DAILY_MESSAGE_LIMIT` — how many AI messages she can send per day.
+  Defaults to 30.
+
+To turn the AI tutor back off at any time, just remove `ANTHROPIC_API_KEY`
+(or set it blank) and redeploy — every AI button disappears automatically.
