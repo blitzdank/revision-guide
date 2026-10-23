@@ -1,0 +1,113 @@
+[
+  {
+    "id": "wn1",
+    "type": "multiple_choice",
+    "specRef": "1HI0/31 (Option 31)",
+    "marks": 1,
+    "prompt": "What caused the 1923 hyperinflation crisis?",
+    "options": [
+      "A stock market crash",
+      "Germany printing money after defaulting on reparations and France occupying the Ruhr",
+      "A failed harvest",
+      "A bank collapse in Berlin"
+    ],
+    "answerIndex": 1,
+    "explanation": "Germany printed money to pay striking Ruhr workers after defaulting on reparations, triggering hyperinflation."
+  },
+  {
+    "id": "wn2",
+    "type": "short_answer",
+    "specRef": "1HI0/31 (Option 31)",
+    "marks": 1,
+    "prompt": "What Act (March 1933) let Hitler pass laws without the Reichstag?",
+    "accepted": ["enabling act", "the enabling act"],
+    "explanation": "The Enabling Act."
+  },
+  {
+    "id": "wn3",
+    "type": "ordering",
+    "specRef": "1HI0/31 (Option 31)",
+    "marks": 5,
+    "prompt": "Put these events in chronological order.",
+    "items": [
+      "Munich Putsch",
+      "Wall Street Crash",
+      "Hitler becomes Chancellor",
+      "Reichstag Fire and Enabling Act",
+      "Night of the Long Knives",
+      "Kristallnacht"
+    ]
+  },
+  {
+    "id": "wn4",
+    "type": "short_answer",
+    "specRef": "1HI0/31 (Option 31)",
+    "marks": 1,
+    "prompt": "What organisation controlled Nazi propaganda, led by Goebbels?",
+    "accepted": ["ministry of propaganda", "the ministry of propaganda"],
+    "explanation": "The Ministry of Propaganda."
+  },
+  {
+    "id": "wn5",
+    "type": "multiple_choice",
+    "specRef": "1HI0/31 (Option 31)",
+    "marks": 1,
+    "prompt": "What did the Night of the Long Knives (1934) target?",
+    "options": [
+      "Jewish businesses",
+      "Röhm and the SA leadership",
+      "The Reichstag building",
+      "Communist Party offices"
+    ],
+    "answerIndex": 1,
+    "explanation": "Röhm and other SA/rival figures, seen as a threat to Hitler's power."
+  },
+  {
+    "id": "wn6",
+    "type": "extended",
+    "specRef": "1HI0/31 Q2",
+    "marks": 8,
+    "prompt": "Explain why the Nazi Party grew in support between 1929 and 1933.",
+    "indicativeContent": [
+      "The Wall Street Crash/Depression caused mass unemployment, creating demand for radical solutions",
+      "Effective Nazi propaganda and the visible strength of the SA gave an impression of order and strength",
+      "Nazi promises cut across class lines, appealing to both middle-class and working-class voters",
+      "Growing fear of Communism pushed some voters and elites toward the Nazis as an alternative",
+      "Political instability and weak coalition governments under the Weimar Constitution made a strong, decisive alternative more appealing",
+      "A strong answer explains multiple causes and how they connect, not just lists them"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-2", "description": "Simple, undeveloped points with little explanation." },
+      { "level": 2, "marksRange": "3-5", "description": "Some causes explained, with limited linkage between them." },
+      { "level": 3, "marksRange": "6-8", "description": "Multiple well-explained causes, clearly linked to growing Nazi support." }
+    ]
+  },
+  {
+    "id": "wn7",
+    "type": "extended",
+    "specRef": "1HI0/31 Q3(c)",
+    "marks": 8,
+    "prompt": "Two historians study the same event in Nazi Germany but reach different conclusions about how much ordinary Germans supported the regime. Explain why two historians' interpretations of the same event might differ, even when looking at similar evidence.",
+    "indicativeContent": [
+      "Historians may have used different sources (e.g. official Nazi records vs. private diaries/letters) which emphasise different things",
+      "A historian's own perspective, time period, or purpose in writing can shape which evidence they prioritise",
+      "Some evidence from the period (propaganda, forced public displays of support) is itself unreliable, so historians may weigh it differently",
+      "Access to new evidence over time can change later historians' conclusions compared to earlier ones",
+      "This is a skills-practice question — in the real exam, you'd be given two actual interpretations to compare directly"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-2", "description": "Simple, general comment with little explanation." },
+      { "level": 2, "marksRange": "3-5", "description": "Some relevant reasons given, with partial explanation." },
+      { "level": 3, "marksRange": "6-8", "description": "Clear, well-explained reasons for why interpretations can genuinely differ." }
+    ]
+  },
+  {
+    "id": "wn8",
+    "type": "short_answer",
+    "specRef": "1HI0/31 (Option 31)",
+    "marks": 1,
+    "prompt": "What slogan summed up Nazi ideology on women's roles (children, kitchen, church)?",
+    "accepted": ["kinder, küche, kirche", "kinder kuche kirche", "kinder, kuche, kirche"],
+    "explanation": "\"Kinder, Küche, Kirche\" — children, kitchen, church."
+  }
+]

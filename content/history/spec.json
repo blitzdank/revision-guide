@@ -1,0 +1,28 @@
+{
+  "qualification": "Edexcel GCSE History (1HI0)",
+  "papers": [
+    {
+      "id": "paper-1",
+      "name": "Paper 1: Thematic study and historic environment",
+      "topics": [
+        { "slug": "medicine-in-britain", "name": "Medicine in Britain, c1250–present", "specRef": "1HI0/11" },
+        { "slug": "western-front", "name": "The British sector of the Western Front, 1914–18", "specRef": "1HI0/11 (historic environment)" }
+      ]
+    },
+    {
+      "id": "paper-2",
+      "name": "Paper 2: Period study and British depth study",
+      "topics": [
+        { "slug": "american-west", "name": "The American West, c1835–c1895", "specRef": "1HI0/20 (Option P3)" },
+        { "slug": "anglo-saxon-norman-england", "name": "Anglo-Saxon and Norman England, c1060–88", "specRef": "1HI0/21 (Option B1)" }
+      ]
+    },
+    {
+      "id": "paper-3",
+      "name": "Paper 3: Modern depth study",
+      "topics": [
+        { "slug": "weimar-nazi-germany", "name": "Weimar and Nazi Germany, 1918–39", "specRef": "1HI0/31 (Option 31)" }
+      ]
+    }
+  ]
+}

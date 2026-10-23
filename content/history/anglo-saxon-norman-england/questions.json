@@ -1,0 +1,98 @@
+[
+  {
+    "id": "an1",
+    "type": "multiple_choice",
+    "specRef": "1HI0/21 (Option B1)",
+    "marks": 1,
+    "prompt": "Who did the Witan choose as king after Edward the Confessor's death?",
+    "options": ["William of Normandy", "Harold Godwinson", "Harald Hardrada", "Edgar Aethling"],
+    "answerIndex": 1,
+    "explanation": "Harold Godwinson was crowned immediately after being chosen by the Witan."
+  },
+  {
+    "id": "an2",
+    "type": "ordering",
+    "specRef": "1HI0/21 (Option B1)",
+    "marks": 4,
+    "prompt": "Put these 1066 battles/events in order.",
+    "items": [
+      "Death of Edward the Confessor",
+      "Battle of Stamford Bridge",
+      "Battle of Hastings",
+      "Submission of the earls"
+    ]
+  },
+  {
+    "id": "an3",
+    "type": "short_answer",
+    "specRef": "1HI0/21 (Option B1)",
+    "marks": 1,
+    "prompt": "What was William's brutal 1069–70 campaign across northern England called?",
+    "accepted": ["harrying of the north", "the harrying of the north"],
+    "explanation": "The Harrying of the North."
+  },
+  {
+    "id": "an4",
+    "type": "short_answer",
+    "specRef": "1HI0/21 (Option B1)",
+    "marks": 1,
+    "prompt": "Where did Hereward the Wake resist Norman control (1070–71)?",
+    "accepted": ["ely"],
+    "explanation": "Ely."
+  },
+  {
+    "id": "an5",
+    "type": "multiple_choice",
+    "specRef": "1HI0/21 (Option B1)",
+    "marks": 1,
+    "prompt": "What was the Domesday Book?",
+    "options": [
+      "A record of Church sermons",
+      "A detailed survey of land and resources across England",
+      "A law code for the feudal system",
+      "A list of knights owed to the King"
+    ],
+    "answerIndex": 1,
+    "explanation": "A huge survey of land and resources (1086), used for taxation and establishing landownership."
+  },
+  {
+    "id": "an6",
+    "type": "extended",
+    "specRef": "1HI0/21 Q2",
+    "marks": 8,
+    "prompt": "Explain the causes of William's victory at the Battle of Hastings.",
+    "indicativeContent": [
+      "Harold's army was exhausted and depleted after the forced march south from Stamford Bridge",
+      "Norman cavalry and archers gave tactical advantages over the Anglo-Saxon shield wall",
+      "Norman use of feigned retreats drew Anglo-Saxon soldiers out of formation",
+      "Harold's death partway through the battle badly damaged Anglo-Saxon morale and command",
+      "A strong answer explains at least two to three distinct causes in depth, not just one"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-2", "description": "Simple, undeveloped statements with little explanation." },
+      { "level": 2, "marksRange": "3-5", "description": "Some causes identified and partially explained." },
+      { "level": 3, "marksRange": "6-8", "description": "Multiple causes explained in depth, clearly linked to the outcome." }
+    ]
+  },
+  {
+    "id": "an7",
+    "type": "extended",
+    "specRef": "1HI0/21 Q3/Q4",
+    "marks": 16,
+    "prompt": "\"The Harrying of the North was the most significant method William used to control Anglo-Saxon England.\" How far do you agree? Explain your answer.",
+    "indicativeContent": [
+      "For: the Harrying caused devastating, lasting destruction and was a clear, brutal deterrent to further rebellion",
+      "Against: castles provided ongoing, permanent military control rather than a one-off punishment",
+      "Against: changes to landownership (replacing Anglo-Saxon nobles with Normans) removed the social base for future resistance",
+      "Against: feudal structures and the Domesday survey gave William long-term administrative control, not just military force",
+      "A balanced answer weighs short-term brutal suppression against longer-term structural control methods",
+      "Reach a clear, justified judgement rather than just listing methods"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-4", "description": "General assertions, little supporting knowledge." },
+      { "level": 2, "marksRange": "5-8", "description": "Some relevant factors explained, limited focus on the statement." },
+      { "level": 3, "marksRange": "9-12", "description": "Well-explained factors, clearly focused on the statement, some judgement." },
+      { "level": 4, "marksRange": "13-16", "description": "Sustained, well-supported argument reaching a clear, justified judgement." }
+    ]
+  }
+]

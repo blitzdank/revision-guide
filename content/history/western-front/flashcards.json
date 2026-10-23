@@ -1,0 +1,10 @@
+[
+  { "id": "f1", "front": "Put the chain of treatment in order, starting from the frontline.", "back": "Stretcher bearers → Regimental Aid Post → Field Ambulance → Dressing Station → Casualty Clearing Station → Base Hospital." },
+  { "id": "f2", "front": "What was a Regimental Aid Post?", "back": "First aid close to the front line, run by the RAMC (Royal Army Medical Corps) and nurses." },
+  { "id": "f3", "front": "What was special about a Casualty Clearing Station?", "back": "It was the first place in the chain where proper surgery could happen — close enough to the front for urgent cases." },
+  { "id": "f4", "front": "What did the Thomas splint do?", "back": "Stabilised a broken leg during transport, dramatically reducing deaths from femur fractures." },
+  { "id": "f5", "front": "Where was the first blood bank used, and when?", "back": "At the Battle of Cambrai, 1917 — allowed stored blood to be transfused rather than only direct donor-to-patient transfusion." },
+  { "id": "f6", "front": "Why was wound infection such a major killer?", "back": "Soil bacteria entering wounds (e.g. causing gas gangrene) was often more dangerous than the original injury." },
+  { "id": "f7", "front": "What were mobile X-ray units used for?", "back": "Letting doctors locate shrapnel or bullets inside a wound without surgery first." },
+  { "id": "f8", "front": "Name one major named battle site on the Western Front.", "back": "Any of: the Ypres salient, the Somme, Arras, Cambrai." }
+]

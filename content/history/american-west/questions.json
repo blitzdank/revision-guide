@@ -1,0 +1,98 @@
+[
+  {
+    "id": "aw1",
+    "type": "multiple_choice",
+    "specRef": "1HI0/20 (Option P3)",
+    "marks": 1,
+    "prompt": "What drove much of the early migration west, alongside the California Gold Rush?",
+    "options": ["Manifest Destiny", "The Dawes Act", "The Homestead Act", "The Pacific Railroad Act"],
+    "answerIndex": 0,
+    "explanation": "Manifest Destiny — the belief Americans were destined to expand west."
+  },
+  {
+    "id": "aw2",
+    "type": "short_answer",
+    "specRef": "1HI0/20 (Option P3)",
+    "marks": 1,
+    "prompt": "What 1862 Act gave settlers land if they farmed it for five years?",
+    "accepted": ["homestead act", "the homestead act"],
+    "explanation": "The Homestead Act (1862)."
+  },
+  {
+    "id": "aw3",
+    "type": "ordering",
+    "specRef": "1HI0/20 (Option P3)",
+    "marks": 5,
+    "prompt": "Put these events in chronological order.",
+    "items": [
+      "First Fort Laramie Treaty",
+      "Sand Creek Massacre",
+      "First Transcontinental Railroad completed",
+      "Battle of the Little Bighorn",
+      "Wounded Knee Massacre"
+    ]
+  },
+  {
+    "id": "aw4",
+    "type": "short_answer",
+    "specRef": "1HI0/20 (Option P3)",
+    "marks": 1,
+    "prompt": "What 1887 Act broke up reservation land into individual plots?",
+    "accepted": ["dawes act", "the dawes act"],
+    "explanation": "The Dawes Act (1887)."
+  },
+  {
+    "id": "aw5",
+    "type": "multiple_choice",
+    "specRef": "1HI0/20 (Option P3)",
+    "marks": 1,
+    "prompt": "What ended the \"open range\" cattle era?",
+    "options": [
+      "The Johnson County War",
+      "The brutal winter of 1886–87",
+      "The Dawes Act",
+      "The Oklahoma Land Rush"
+    ],
+    "answerIndex": 1,
+    "explanation": "The winter of 1886–87 devastated herds, effectively ending the open range."
+  },
+  {
+    "id": "aw6",
+    "type": "extended",
+    "specRef": "1HI0/20 Q2",
+    "marks": 8,
+    "prompt": "Write an account explaining how conflict between settlers and Plains Indigenous peoples developed from 1851 to 1876.",
+    "indicativeContent": [
+      "The first Fort Laramie Treaty (1851) tried to define territory but migration pressure quickly undermined it",
+      "Railroads, cattle and gold mining (1860s) increasingly encroached on tribal land and disrupted buffalo herds",
+      "This led to violent flashpoints: Little Crow's War (1862), the Sand Creek Massacre (1864)",
+      "Red Cloud's War (1866-68) and the second Fort Laramie Treaty (1868) show escalating, organised Indigenous resistance",
+      "This builds toward the Battle of the Little Bighorn (1876), a major Indigenous victory that provoked harsher US military response",
+      "Use linking language (\"this led to\", \"as a result\") to connect events causally, not just list them in order"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-2", "description": "Simple statements of events with little or no linkage." },
+      { "level": 2, "marksRange": "3-5", "description": "Some events linked together, with partial explanation of cause and effect." },
+      { "level": 3, "marksRange": "6-8", "description": "A connected, well-explained account showing clearly how one event led to the next." }
+    ]
+  },
+  {
+    "id": "aw7",
+    "type": "extended",
+    "specRef": "1HI0/20 Q3",
+    "marks": 8,
+    "prompt": "Explain the significance of the Battle of the Little Bighorn (1876) for the Plains Indigenous peoples.",
+    "indicativeContent": [
+      "Immediate significance: a major, symbolically important Indigenous military victory over Custer",
+      "Longer-term significance: it provoked a much harsher, more determined US military campaign against Plains tribes",
+      "Contributed to the chain of events leading toward Wounded Knee (1890) and the effective end of armed resistance",
+      "Significance isn't just about describing the battle — explain what actually changed as a result of it",
+      "A strong answer connects this one event to the broader pattern of conflict and conquest across the period"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-2", "description": "Describes the event with little explanation of significance." },
+      { "level": 2, "marksRange": "3-5", "description": "Some explanation of consequences, partially linked to wider significance." },
+      { "level": 3, "marksRange": "6-8", "description": "Clear, well-supported explanation of both immediate and longer-term significance." }
+    ]
+  }
+]

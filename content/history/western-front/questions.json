@@ -1,0 +1,83 @@
+[
+  {
+    "id": "wf1",
+    "type": "ordering",
+    "specRef": "1HI0/11 (historic environment)",
+    "marks": 5,
+    "prompt": "Put the chain of treatment in order, from the frontline back.",
+    "items": [
+      "Stretcher bearers",
+      "Regimental Aid Post",
+      "Field Ambulance",
+      "Dressing Station",
+      "Casualty Clearing Station",
+      "Base Hospital"
+    ]
+  },
+  {
+    "id": "wf2",
+    "type": "multiple_choice",
+    "specRef": "1HI0/11 (historic environment)",
+    "marks": 1,
+    "prompt": "What did the Thomas splint help treat?",
+    "options": ["Gas poisoning", "Broken femurs", "Head injuries", "Infected wounds"],
+    "answerIndex": 1,
+    "explanation": "It stabilised a broken leg during transport, reducing deaths from femur fractures."
+  },
+  {
+    "id": "wf3",
+    "type": "short_answer",
+    "specRef": "1HI0/11 (historic environment)",
+    "marks": 1,
+    "prompt": "What battle, in 1917, saw the first use of a blood bank?",
+    "accepted": ["cambrai", "battle of cambrai"],
+    "explanation": "The Battle of Cambrai, 1917."
+  },
+  {
+    "id": "wf4",
+    "type": "short_answer",
+    "specRef": "1HI0/11 (historic environment)",
+    "marks": 1,
+    "prompt": "What corps ran the Regimental Aid Posts?",
+    "accepted": ["ramc", "royal army medical corps", "the ramc"],
+    "explanation": "The RAMC — Royal Army Medical Corps."
+  },
+  {
+    "id": "wf5",
+    "type": "multiple_choice",
+    "specRef": "1HI0/11 (historic environment)",
+    "marks": 1,
+    "prompt": "What was a major cause of death from relatively minor wounds on the Western Front?",
+    "options": ["Malnutrition", "Wound infection from soil bacteria", "Frostbite", "Heatstroke"],
+    "answerIndex": 1,
+    "explanation": "Infection from soil bacteria (e.g. gas gangrene) often killed where the original wound wouldn't have."
+  },
+  {
+    "id": "wf6",
+    "type": "extended",
+    "specRef": "1HI0/11 Q2(a)",
+    "marks": 8,
+    "prompt": "Explain how useful two contemporary sources about the treatment of wounded soldiers would be for an enquiry into medical innovation on the Western Front. (Practise this with any two sources your teacher/textbook provides — this entry gives you the structure.)",
+    "indicativeContent": [
+      "Consider what the source's content directly tells you about treatment/innovation",
+      "Consider the source's provenance — who made it, when, why — and what that suggests about reliability or bias",
+      "Use your own contextual knowledge (e.g. the real chain of treatment, named innovations) to judge whether the source matches what you know",
+      "A source can still be useful even if biased or incomplete, as long as you explain specifically what it's useful for",
+      "A strong answer reaches a judgement about overall usefulness, not just separate comments on each source"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-2", "description": "Simple comments on source content only." },
+      { "level": 2, "marksRange": "3-5", "description": "Some use of provenance and/or contextual knowledge to assess usefulness." },
+      { "level": 3, "marksRange": "6-8", "description": "Sustained judgement using content, provenance and contextual knowledge together." }
+    ]
+  },
+  {
+    "id": "wf7",
+    "type": "short_answer",
+    "specRef": "1HI0/11 (historic environment)",
+    "marks": 1,
+    "prompt": "What were mobile X-ray units used to locate?",
+    "accepted": ["shrapnel", "bullets", "shrapnel or bullets", "shrapnel and bullets"],
+    "explanation": "Shrapnel or bullets inside a wound, without surgery first."
+  }
+]

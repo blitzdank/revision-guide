@@ -1,0 +1,12 @@
+[
+  { "id": "f1", "front": "The Four Humours theory", "back": "Medieval idea (from the ancient Greeks, via Galen) that illness came from an imbalance of blood, phlegm, black bile and yellow bile." },
+  { "id": "f2", "front": "Miasma", "back": "The belief that disease was spread by \"bad air\" — a common explanation from medieval times right through to the 1800s." },
+  { "id": "f3", "front": "What did Thomas Sydenham push for in the Renaissance period?", "back": "A more scientific, observation-based approach to diagnosing illness, rather than relying on old theory." },
+  { "id": "f4", "front": "What did William Harvey discover?", "back": "The circulation of blood — disproving part of Galen's theory, though it took decades to change actual treatment." },
+  { "id": "f5", "front": "Why is Pasteur's Germ Theory (1861) such a turning point?", "back": "It was the first genuinely correct explanation of disease, replacing centuries of wrong theories like the Four Humours and miasma." },
+  { "id": "f6", "front": "What did John Snow show during the 1854 Cholera outbreak?", "back": "By tracing cases to the Broad Street pump, he showed cholera spread through contaminated water — a landmark use of evidence-based investigation." },
+  { "id": "f7", "front": "What did the Public Health Act (1875) do?", "back": "Made local government responsible for sanitation — a major shift toward government-led disease prevention." },
+  { "id": "f8", "front": "Who discovered penicillin, and who turned it into a usable mass treatment?", "back": "Fleming discovered it (1928); Florey and Chain developed it into a working treatment decades later, during WWII." },
+  { "id": "f9", "front": "What did the NHS (1948) change?", "back": "Made healthcare free at the point of use — the biggest single government intervention across the whole topic." },
+  { "id": "f10", "front": "Why is Jenner's smallpox vaccination (1796) notable, given it predates Germ Theory?", "back": "It worked and was developed through observation and evidence — decades before anyone could explain *why* it worked." }
+]

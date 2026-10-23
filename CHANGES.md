@@ -1,5 +1,30 @@
 # Changes
 
+## Phase 6 — History (2026-10-23)
+
+All five Edexcel (1HI0) topics, researched directly against Pearson's
+official specification PDF (named content, real command words and mark
+allocations per paper, not generic approximations):
+
+- **Medicine in Britain, c1250–present** (Paper 1 thematic study) — all
+  four periods (medieval, Renaissance, Industrial, modern) with their case
+  studies (Black Death, Jenner, Snow and cholera, penicillin).
+- **The British sector of the Western Front, 1914–18** (Paper 1 historic
+  environment) — the treatment chain, named innovations, source-usefulness
+  practice.
+- **The American West, c1835–c1895** (Paper 2 period study) — all three
+  key topics, settlement through to Wounded Knee and the Dawes Act.
+- **Anglo-Saxon and Norman England, c1060–88** (Paper 2 British depth
+  study) — succession crisis through to William I's death.
+- **Weimar and Nazi Germany, 1918–39** (Paper 3 modern depth study) — all
+  four key topics, plus a question practising the interpretations-comparison
+  skill unique to this paper.
+
+No engine changes needed — History reuses Phase 3's content system,
+flashcards, quizzes (ordering questions suit chronology well) and
+past-paper tracker as-is, which is exactly what that shared engine was
+built for.
+
 ## Phase 5 — AI tutor (2026-10-23)
 
 - AI tutor, off by default — only turns on once `ANTHROPIC_API_KEY` is set

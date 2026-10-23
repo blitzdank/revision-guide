@@ -1,0 +1,128 @@
+[
+  {
+    "id": "mb1",
+    "type": "multiple_choice",
+    "specRef": "1HI0/11",
+    "marks": 1,
+    "prompt": "Which theory held that illness was caused by an imbalance of blood, phlegm, black bile and yellow bile?",
+    "options": ["Germ Theory", "The Four Humours", "Miasma theory", "Spontaneous generation"],
+    "answerIndex": 1,
+    "explanation": "The Four Humours — inherited from the ancient Greeks and taught via Galen."
+  },
+  {
+    "id": "mb2",
+    "type": "multiple_choice",
+    "specRef": "1HI0/11",
+    "marks": 1,
+    "prompt": "Who proved Germ Theory in 1861?",
+    "options": ["Robert Koch", "Louis Pasteur", "Edward Jenner", "John Snow"],
+    "answerIndex": 1,
+    "explanation": "Louis Pasteur — Koch then built on this, identifying specific microbes behind individual diseases."
+  },
+  {
+    "id": "mb3",
+    "type": "short_answer",
+    "specRef": "1HI0/11",
+    "marks": 1,
+    "prompt": "What 1875 Act made local government responsible for sanitation?",
+    "accepted": ["public health act", "the public health act", "public health act 1875"],
+    "explanation": "The Public Health Act (1875)."
+  },
+  {
+    "id": "mb4",
+    "type": "short_answer",
+    "specRef": "1HI0/11",
+    "marks": 1,
+    "prompt": "Which London pump did John Snow trace the 1854 cholera outbreak to?",
+    "accepted": ["broad street", "broad street pump"],
+    "explanation": "The Broad Street pump."
+  },
+  {
+    "id": "mb5",
+    "type": "ordering",
+    "specRef": "1HI0/11",
+    "marks": 4,
+    "prompt": "Put these in chronological order.",
+    "items": [
+      "The Black Death reaches England",
+      "William Harvey discovers the circulation of blood",
+      "Edward Jenner develops the smallpox vaccination",
+      "Pasteur proves Germ Theory",
+      "The NHS is founded"
+    ]
+  },
+  {
+    "id": "mb6",
+    "type": "short_answer",
+    "specRef": "1HI0/11",
+    "marks": 1,
+    "prompt": "Who discovered penicillin in 1928?",
+    "accepted": ["fleming", "alexander fleming"],
+    "explanation": "Alexander Fleming — though Florey and Chain developed it into a usable treatment years later."
+  },
+  {
+    "id": "mb7",
+    "type": "extended",
+    "specRef": "1HI0/11 Q4",
+    "marks": 8,
+    "prompt": "Explain why there was rapid change in the understanding of the causes of disease in the period c1850–1900.",
+    "indicativeContent": [
+      "Pasteur's Germ Theory (1861) gave the first scientifically correct explanation of disease",
+      "Koch built directly on Pasteur, identifying specific microbes for specific diseases",
+      "Improved microscopes and scientific method allowed direct observation of germs",
+      "The Royal Society and scientific journals allowed findings to spread and be tested quickly",
+      "John Snow's 1854 investigation showed the value of evidence-based investigation even just before Germ Theory was proven",
+      "Link each factor back to the question: explain *why* it caused rapid change, not just describe it"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-2", "description": "General, undeveloped points with little explanation." },
+      { "level": 2, "marksRange": "3-5", "description": "Some relevant factors explained, with limited linkage between them." },
+      { "level": 3, "marksRange": "6-8", "description": "Well-developed explanation of multiple factors, clearly linked to why change was rapid in this period." }
+    ]
+  },
+  {
+    "id": "mb8",
+    "type": "extended",
+    "specRef": "1HI0/11 Q5/Q6",
+    "marks": 16,
+    "prompt": "\"Government action was the main reason for improvements in public health in the period c1700–present.\" How far do you agree? Explain your answer.",
+    "indicativeContent": [
+      "For: the Public Health Act (1875), the NHS (1948), mass vaccination and lifestyle campaigns all show direct government intervention",
+      "Against: scientific breakthroughs (Germ Theory, antibiotics/penicillin) happened independently of government, and individuals (Jenner, Snow, Fleming) drove key turning points",
+      "Against: war (WWII) accelerated penicillin's development, which wasn't a government public-health initiative as such",
+      "A balanced answer links factors together — e.g. government could only act on Germ Theory once scientists had proven it",
+      "A strong answer reaches a clear, justified judgement rather than just listing both sides",
+      "Up to 4 of these marks are for spelling, punctuation and grammar — proofread your final answer"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-4", "description": "General assertions with little supporting knowledge or explanation." },
+      { "level": 2, "marksRange": "5-8", "description": "Some relevant factors explained, limited focus on the given statement." },
+      { "level": 3, "marksRange": "9-12", "description": "Well-explained factors, clearly focused on the statement, some judgement." },
+      { "level": 4, "marksRange": "13-16", "description": "Sustained, well-supported argument reaching a clear, justified judgement about how far the statement is true." }
+    ]
+  },
+  {
+    "id": "mb9",
+    "type": "multiple_choice",
+    "specRef": "1HI0/11",
+    "marks": 1,
+    "prompt": "What did Vesalius's dissections mainly correct?",
+    "options": [
+      "Errors in Galen's anatomy",
+      "The theory of the Four Humours",
+      "Miasma theory",
+      "The cause of the Black Death"
+    ],
+    "answerIndex": 0,
+    "explanation": "Vesalius corrected errors in Galen's anatomy through direct dissection, influencing how doctors were trained."
+  },
+  {
+    "id": "mb10",
+    "type": "short_answer",
+    "specRef": "1HI0/11",
+    "marks": 1,
+    "prompt": "What year was the NHS founded?",
+    "accepted": ["1948"],
+    "explanation": "1948 — healthcare free at the point of use."
+  }
+]
