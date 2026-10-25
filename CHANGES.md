@@ -3,12 +3,22 @@
 ## Deployed to Railway (2026-10-25)
 
 The app is now live at `https://revision-guide-production.up.railway.app`
-(Phases 1-8). Three deploy gotchas hit along the way, now documented in
-SETUP.md section 4: Railway assigns its own runtime port (ours came up as
-8080) and the domain must target that exact port or you get a 502;
-`NEXT_PUBLIC_*` variables are baked in at build time, so saving one isn't
-enough — you need to trigger a real rebuild via the "Apply changes"
-prompt, or you'll see an "Internal Server Error" from a stale build.
+(Phases 1-8). Several deploy gotchas hit along the way, now documented in
+SETUP.md section 4:
+- Railway assigns its own runtime port (ours came up as 8080) and the
+  domain must target that exact port, or you get a 502.
+- `NEXT_PUBLIC_*` variables are baked in at build time, so saving one isn't
+  enough — you need to trigger a real rebuild via the "Apply changes"
+  prompt, or you'll see an "Internal Server Error" from a stale build.
+- The big one: the Supabase anon key variable had a stray leading `=`
+  (from pasting `NAME=value` instead of just `value`), which silently
+  broke every Supabase call in the live app with "Invalid API key" —
+  this is what caused the knock-on password-reset chase below. Fixed by
+  re-entering just the key value.
+- Supabase's Site URL setting was still `http://localhost:3000`, which is
+  what a password-reset link falls back to when no redirect URL is given
+  (e.g. one sent via Supabase's own dashboard button) — now set to the
+  Railway URL.
 
 ## Phase 8 — Combined Science, Higher tier (2026-10-25)
 

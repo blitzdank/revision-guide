@@ -86,6 +86,12 @@ stay private.
 4. Click into the new service → **Variables** tab → add the same three
    variables from your `.env.local` (step 3), except set
    `NEXT_PUBLIC_SITE_URL` to your Railway URL once you have it (next step).
+   **Paste only the value** for each — if you copy a whole line like
+   `NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJ...` from a file, make sure you paste
+   just the `eyJ...` part into the value field, not the `NAME=` prefix too.
+   A stray leading `=` silently breaks every Supabase call in the app with
+   "Invalid API key" — this happened on the first deploy and took a while
+   to track down, so it's worth double-checking each value here.
 5. Go to **Settings → Networking → Generate Domain**. If it asks which port
    to route to, check the deploy logs first (Deployments → latest → the log
    starting "Starting Container") for a line like
@@ -102,9 +108,12 @@ stay private.
 7. Back in Supabase, go to **Authentication → URL Configuration** and:
    - Add your Railway URL to **Redirect URLs** as
      `https://<your-railway-url>/auth/callback`.
-   - You can leave **Site URL** as `http://localhost:3000` — the app always
-     sends the exact redirect URL it needs, so this field mostly matters for
-     Supabase's own default email templates.
+   - **Update Site URL to your Railway URL too** (not `http://localhost:3000`).
+     Supabase falls back to this field whenever a redirect URL isn't
+     explicitly specified — e.g. a password-reset email sent from the
+     Supabase dashboard's own "Send password recovery" button — so leaving
+     it as localhost sends people to an unreachable address after they
+     click the link.
 
 **If you ever see a 502 Bad Gateway**: the domain's target port doesn't
 match what the app is actually listening on — check the deploy log as in
@@ -113,6 +122,23 @@ step 5 and fix the port in Settings → Networking.
 **If you see "Internal Server Error" after changing a variable**: the
 change probably hasn't actually been deployed yet — check for a pending
 "Apply changes" prompt as in step 6.
+
+**If you see "Invalid API key" anywhere in the app** (sign in, sign up,
+anything): a Railway variable's value almost certainly has an extra
+character in it (commonly a stray `=` from pasting `NAME=value` instead of
+just `value`). Go to Variables, reveal each `NEXT_PUBLIC_*` value, and
+check it starts exactly where it should (the anon key starts `eyJhbG...`,
+no leading characters).
+
+**If a password reset link "just takes me to the sign-in page"** instead
+of letting you set a new password: this can happen if Supabase's Site URL
+is stale (see step 7) or if an email app/security scanner "clicks" the
+link automatically before you do, using up its one-time code. If you get
+stuck, the fastest unblock is to create a fresh invite code yourself via
+Supabase's **SQL Editor** (`insert into invites (code, grants_role) values
+('SOMECODE', 'admin');`) and sign up again with a new account — don't use
+Supabase's admin API/service_role key for this unless you're comfortable
+handling that secret yourself; it's powerful and never belongs in chat.
 
 ---
 
