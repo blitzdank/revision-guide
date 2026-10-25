@@ -86,17 +86,33 @@ stay private.
 4. Click into the new service → **Variables** tab → add the same three
    variables from your `.env.local` (step 3), except set
    `NEXT_PUBLIC_SITE_URL` to your Railway URL once you have it (next step).
-5. Go to **Settings → Networking → Generate Domain**. Railway gives you a
-   public URL like `https://revision-guide-production.up.railway.app`.
-6. Update the `NEXT_PUBLIC_SITE_URL` variable to that URL, and redeploy
-   (Railway usually does this automatically when you change a variable —
-   if not, click **Deploy** in the top right).
+5. Go to **Settings → Networking → Generate Domain**. If it asks which port
+   to route to, check the deploy logs first (Deployments → latest → the log
+   starting "Starting Container") for a line like
+   `- Local: http://localhost:8080` — use **that** port number, not 3000.
+   Railway assigns its own port at runtime and our app listens on whatever
+   it picks; the domain has to point at the same one, or you'll get a
+   502 Bad Gateway. Railway gives you a public URL like
+   `https://revision-guide-production.up.railway.app`.
+6. Update the `NEXT_PUBLIC_SITE_URL` variable to that URL. **Next.js bakes
+   this kind of variable into the build itself**, so just saving it isn't
+   enough — look for an **"Apply N changes" / "Deploy" prompt** (usually at
+   the bottom of the screen) and click it to trigger a real rebuild. A
+   "Redeploy" of an old build will *not* pick up new variables.
 7. Back in Supabase, go to **Authentication → URL Configuration** and:
    - Add your Railway URL to **Redirect URLs** as
      `https://<your-railway-url>/auth/callback`.
    - You can leave **Site URL** as `http://localhost:3000` — the app always
      sends the exact redirect URL it needs, so this field mostly matters for
      Supabase's own default email templates.
+
+**If you ever see a 502 Bad Gateway**: the domain's target port doesn't
+match what the app is actually listening on — check the deploy log as in
+step 5 and fix the port in Settings → Networking.
+
+**If you see "Internal Server Error" after changing a variable**: the
+change probably hasn't actually been deployed yet — check for a pending
+"Apply changes" prompt as in step 6.
 
 ---
 

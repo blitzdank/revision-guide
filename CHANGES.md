@@ -1,5 +1,15 @@
 # Changes
 
+## Deployed to Railway (2026-10-25)
+
+The app is now live at `https://revision-guide-production.up.railway.app`
+(Phases 1-8). Three deploy gotchas hit along the way, now documented in
+SETUP.md section 4: Railway assigns its own runtime port (ours came up as
+8080) and the domain must target that exact port or you get a 502;
+`NEXT_PUBLIC_*` variables are baked in at build time, so saving one isn't
+enough — you need to trigger a real rebuild via the "Apply changes"
+prompt, or you'll see an "Internal Server Error" from a stale build.
+
 ## Phase 8 — Combined Science, Higher tier (2026-10-25)
 
 - Six real topics across all three sciences, researched against AQA's
