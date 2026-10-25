@@ -1,0 +1,24 @@
+{
+  "qualification": "AQA GCSE Combined Science: Trilogy (8464), Higher tier — Biology",
+  "papers": [
+    {
+      "id": "paper-1",
+      "name": "Biology Paper 1",
+      "topics": [
+        { "slug": "cell-biology", "name": "Cell biology", "specRef": "8464 Biology 4.1" },
+        { "slug": "organisation", "name": "Organisation", "specRef": "8464 Biology 4.2" },
+        { "slug": "infection-and-response", "name": "Infection and response", "specRef": "8464 Biology 4.3" },
+        { "slug": "bioenergetics", "name": "Bioenergetics", "specRef": "8464 Biology 4.4" }
+      ]
+    },
+    {
+      "id": "paper-2",
+      "name": "Biology Paper 2",
+      "topics": [
+        { "slug": "homeostasis-and-response", "name": "Homeostasis and response", "specRef": "8464 Biology 4.5" },
+        { "slug": "inheritance-variation-evolution", "name": "Inheritance, variation and evolution", "specRef": "8464 Biology 4.6" },
+        { "slug": "ecology", "name": "Ecology", "specRef": "8464 Biology 4.7" }
+      ]
+    }
+  ]
+}

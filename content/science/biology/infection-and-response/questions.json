@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ir1",
+    "type": "multiple_choice",
+    "specRef": "8464 Biology 4.3",
+    "marks": 1,
+    "prompt": "Malaria is caused by which type of pathogen?",
+    "options": ["Bacteria", "Virus", "Fungus", "Protist"],
+    "answerIndex": 3,
+    "explanation": "Malaria is caused by a protist, spread by mosquitoes acting as a vector."
+  },
+  {
+    "id": "ir2",
+    "type": "short_answer",
+    "specRef": "8464 Biology 4.3",
+    "marks": 1,
+    "prompt": "What mould did Alexander Fleming discover penicillin from?",
+    "accepted": ["penicillium"],
+    "explanation": "Penicillium."
+  },
+  {
+    "id": "ir3",
+    "type": "ordering",
+    "specRef": "8464 Biology 4.3",
+    "marks": 3,
+    "prompt": "Put these barriers/defences in the order a pathogen would typically meet them, from outside the body to inside.",
+    "items": ["Skin", "Mucus and cilia in the trachea and bronchi", "Hydrochloric acid in the stomach", "White blood cells"]
+  },
+  {
+    "id": "ir4",
+    "type": "short_answer",
+    "specRef": "8464 Biology 4.3",
+    "marks": 1,
+    "prompt": "Name one way white blood cells respond to a pathogen, besides phagocytosis.",
+    "accepted": ["antibody production", "producing antibodies", "antitoxin production", "producing antitoxins", "antibodies", "antitoxins"],
+    "explanation": "Antibody production or antitoxin production."
+  },
+  {
+    "id": "ir5",
+    "type": "multiple_choice",
+    "specRef": "8464 Biology 4.3",
+    "marks": 1,
+    "prompt": "Why don't antibiotics work against viruses?",
+    "options": [
+      "Viruses are too small",
+      "Viruses reproduce inside human cells, unlike bacteria",
+      "Antibiotics only work on plant diseases",
+      "Viruses are immune to all chemicals"
+    ],
+    "answerIndex": 1,
+    "explanation": "Viruses reproduce inside human cells in a completely different way to bacteria, so antibiotics have no effect on them."
+  },
+  {
+    "id": "ir6",
+    "type": "short_answer",
+    "specRef": "8464 Biology 4.3",
+    "marks": 1,
+    "prompt": "What natural plant source did aspirin originally come from?",
+    "accepted": ["willow", "willow tree", "willow trees"],
+    "explanation": "Willow trees."
+  },
+  {
+    "id": "ir7",
+    "type": "extended",
+    "specRef": "8464 Biology 4.3",
+    "marks": 6,
+    "prompt": "Explain how vaccination protects a person against a disease, and why it means they respond faster if they meet the real pathogen later.",
+    "indicativeContent": [
+      "A vaccine contains a small, safe amount of a dead or inactive pathogen, or parts of it",
+      "This triggers the immune system to produce antibodies specific to that pathogen's antigens, without causing the disease",
+      "Memory cells are produced as part of this response",
+      "If the real pathogen is met later, memory cells recognise it immediately and antibodies are produced much faster",
+      "This faster response usually destroys the pathogen before symptoms of the disease develop",
+      "A full-marks answer explains both halves: how the vaccine works, and why the later response is faster"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-2", "description": "States vaccines cause antibody production, with little further explanation." },
+      { "level": 2, "marksRange": "3-4", "description": "Explains antibody production and mentions memory cells or faster future response." },
+      { "level": 3, "marksRange": "5-6", "description": "Full, clear explanation of both the initial response and why future response is faster, using correct terminology." }
+    ]
+  }
+]

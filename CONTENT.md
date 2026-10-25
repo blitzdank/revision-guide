@@ -69,16 +69,18 @@ model in the build brief, section 8).
 - **Original writing.** Notes and explanations are written from scratch, not
   copied from revision sites or textbooks.
 - **Maths/Science answers are checked**, not just written — by working them
-  out by hand, and with an automated script where practical. See
-  `scripts/verify-maths-answers.mjs`: every numeric-answer question in
-  `content/maths` is independently recalculated and checked against the
-  stored answer. Run it after adding or changing any numeric Maths question:
+  out by hand, and with an automated script. `scripts/verify-maths-answers.mjs`
+  and `scripts/verify-science-answers.mjs` each independently recalculate
+  every numeric-answer question in `content/maths` / `content/science` and
+  check it against the stored answer. Run the relevant one after adding or
+  changing any numeric Maths or Science question:
   ```bash
   node scripts/verify-maths-answers.mjs
+  node scripts/verify-science-answers.mjs
   ```
-  Add a new `case` to the script's `checks` object for each new numeric
-  question (see the existing entries for the pattern). Science will get the
-  same treatment when that phase starts.
+  Add an entry to the script's `checks` object for each new numeric
+  question (see the existing entries for the pattern) — this has already
+  caught and fixed one authoring error (a depreciation example in Phase 7).
 
 ## Asking for content changes
 

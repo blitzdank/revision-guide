@@ -1,0 +1,101 @@
+[
+  {
+    "id": "cb1",
+    "type": "multiple_choice",
+    "specRef": "8464 Biology 4.1",
+    "marks": 1,
+    "prompt": "What is the key structural difference between a prokaryotic and a eukaryotic cell?",
+    "options": [
+      "Prokaryotic cells have no cell membrane",
+      "Prokaryotic cells have no nucleus",
+      "Eukaryotic cells have no mitochondria",
+      "Eukaryotic cells have no cytoplasm"
+    ],
+    "answerIndex": 1,
+    "explanation": "Prokaryotic cells (bacteria) have no nucleus — DNA floats free as a single loop."
+  },
+  {
+    "id": "cb2",
+    "type": "short_answer",
+    "specRef": "8464 Biology 4.1",
+    "marks": 1,
+    "prompt": "Name one structure found in plant cells but not animal cells.",
+    "accepted": ["cell wall", "chloroplast", "chloroplasts", "permanent vacuole", "vacuole"],
+    "explanation": "Any of: cell wall, chloroplasts, permanent vacuole."
+  },
+  {
+    "id": "cb3",
+    "type": "numeric",
+    "specRef": "8464 Biology 4.1",
+    "marks": 2,
+    "prompt": "An image of a cell is 8 mm wide. The magnification used was ×400. Find the actual size in μm.",
+    "answer": 20,
+    "tolerance": 0,
+    "unit": "μm",
+    "workedSolution": "Actual size = 8 mm ÷ 400 = 0.02 mm = 20 μm."
+  },
+  {
+    "id": "cb4",
+    "type": "numeric",
+    "specRef": "8464 Biology 4.1",
+    "marks": 2,
+    "prompt": "A cell is actually 25 μm wide. At ×200 magnification, how wide will the image be, in mm?",
+    "answer": 5,
+    "tolerance": 0,
+    "unit": "mm",
+    "workedSolution": "Image size = 25 μm × 200 = 5000 μm = 5 mm."
+  },
+  {
+    "id": "cb5",
+    "type": "numeric",
+    "specRef": "8464 Biology 4.1",
+    "marks": 2,
+    "prompt": "A potato chip has an initial mass of 5.2 g. After soaking in a salt solution, its mass is 4.8 g. Find the percentage change in mass, to 2 d.p.",
+    "answer": -7.69,
+    "tolerance": 0.05,
+    "unit": "%",
+    "workedSolution": "% change = (4.8 − 5.2) ÷ 5.2 × 100 = −7.69% — the chip lost water, so the solution was more concentrated than the cells."
+  },
+  {
+    "id": "cb6",
+    "type": "multiple_choice",
+    "specRef": "8464 Biology 4.1",
+    "marks": 1,
+    "prompt": "Which transport process requires energy from respiration?",
+    "options": ["Diffusion", "Osmosis", "Active transport", "None of these"],
+    "answerIndex": 2,
+    "explanation": "Active transport moves particles against the concentration gradient, which needs energy."
+  },
+  {
+    "id": "cb7",
+    "type": "ordering",
+    "specRef": "8464 Biology 4.1",
+    "marks": 3,
+    "prompt": "Put these steps in order for using a light microscope to observe a specimen.",
+    "items": [
+      "Place the slide on the stage and select the lowest-power objective lens",
+      "Use the coarse focus to bring the image roughly into focus",
+      "Switch to a higher-power objective lens and use the fine focus",
+      "Draw the specimen and record the magnification used"
+    ]
+  },
+  {
+    "id": "cb8",
+    "type": "extended",
+    "specRef": "8464 Biology 4.1",
+    "marks": 6,
+    "prompt": "Root hair cells absorb mineral ions from the soil, even when the concentration of those ions is higher inside the root hair cell than in the soil. Explain how this happens.",
+    "indicativeContent": [
+      "This is movement against the concentration gradient (low to high), so diffusion cannot explain it",
+      "This requires active transport, which uses energy",
+      "The energy comes from respiration happening in the root hair cell's mitochondria",
+      "Root hair cells have a large surface area (from their hair-like shape) and many mitochondria, both suited to this function",
+      "A full-marks answer names active transport specifically and explains why diffusion alone can't work here"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-2", "description": "States active transport is involved, with little explanation." },
+      { "level": 2, "marksRange": "3-4", "description": "Explains that active transport requires energy and works against the gradient." },
+      { "level": 3, "marksRange": "5-6", "description": "Full explanation including the energy source (respiration/mitochondria) and why diffusion wouldn't work." }
+    ]
+  }
+]

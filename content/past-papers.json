@@ -30,5 +30,28 @@
       { "id": "paper-2", "name": "Paper 2: Calculator", "maxMarks": 80 },
       { "id": "paper-3", "name": "Paper 3: Calculator", "maxMarks": 80 }
     ]
+  },
+  "science": {
+    "biology": {
+      "specUrl": "https://www.aqa.org.uk/subjects/science/gcse/combined-science-trilogy-8464",
+      "papers": [
+        { "id": "paper-1", "name": "Biology Paper 1", "maxMarks": 70 },
+        { "id": "paper-2", "name": "Biology Paper 2", "maxMarks": 70 }
+      ]
+    },
+    "chemistry": {
+      "specUrl": "https://www.aqa.org.uk/subjects/science/gcse/combined-science-trilogy-8464",
+      "papers": [
+        { "id": "paper-1", "name": "Chemistry Paper 1", "maxMarks": 70 },
+        { "id": "paper-2", "name": "Chemistry Paper 2", "maxMarks": 70 }
+      ]
+    },
+    "physics": {
+      "specUrl": "https://www.aqa.org.uk/subjects/science/gcse/combined-science-trilogy-8464",
+      "papers": [
+        { "id": "paper-1", "name": "Physics Paper 1", "maxMarks": 70 },
+        { "id": "paper-2", "name": "Physics Paper 2", "maxMarks": 70 }
+      ]
+    }
   }
 }

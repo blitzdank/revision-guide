@@ -1,0 +1,96 @@
+[
+  {
+    "id": "en1",
+    "type": "multiple_choice",
+    "specRef": "8464 Physics 6.1",
+    "marks": 1,
+    "prompt": "What does conservation of energy mean?",
+    "options": [
+      "Energy should be used sparingly",
+      "Energy is never created or destroyed, only transferred",
+      "Energy always increases over time",
+      "Energy can be destroyed but not created"
+    ],
+    "answerIndex": 1,
+    "explanation": "Energy is transferred between stores or dissipated, but the total amount is always conserved."
+  },
+  {
+    "id": "en2",
+    "type": "numeric",
+    "specRef": "8464 Physics 6.1",
+    "marks": 3,
+    "prompt": "Find the energy needed to heat 0.5 kg of a substance (specific heat capacity 4200 J/kg°C) by 30°C.",
+    "answer": 63000,
+    "tolerance": 0,
+    "unit": "J",
+    "workedSolution": "$\\Delta E = mc\\Delta\\theta = 0.5 \\times 4200 \\times 30 = 63{,}000$ J."
+  },
+  {
+    "id": "en3",
+    "type": "numeric",
+    "specRef": "8464 Physics 6.1",
+    "marks": 3,
+    "prompt": "1 kg of a material needs 21,000 J to raise its temperature by 10°C. Find its specific heat capacity.",
+    "answer": 2100,
+    "tolerance": 1,
+    "unit": "J/kg°C",
+    "workedSolution": "$c = \\dfrac{\\Delta E}{m\\Delta\\theta} = \\dfrac{21000}{1 \\times 10} = 2100$ J/kg°C."
+  },
+  {
+    "id": "en4",
+    "type": "numeric",
+    "specRef": "8464 Physics 6.1",
+    "marks": 2,
+    "prompt": "A device is supplied with 200 J and usefully transfers 150 J. Find its efficiency as a decimal.",
+    "answer": 0.75,
+    "tolerance": 0.001,
+    "workedSolution": "efficiency = $150 \\div 200 = 0.75$ (75%)."
+  },
+  {
+    "id": "en5",
+    "type": "multiple_choice",
+    "specRef": "8464 Physics 6.1",
+    "marks": 1,
+    "prompt": "In the specific heat capacity practical, why is the calculated value usually higher than the true value?",
+    "options": [
+      "The thermometer reads too low",
+      "Some energy is lost to the surroundings, not all going into heating the material",
+      "The mass is measured too high",
+      "The power supply is too strong"
+    ],
+    "answerIndex": 1,
+    "explanation": "Heat loss means the real temperature rise was smaller than expected for that energy input, making the calculated c too high."
+  },
+  {
+    "id": "en6",
+    "type": "ordering",
+    "specRef": "8464 Physics 6.1",
+    "marks": 4,
+    "prompt": "Put these steps in order for the specific heat capacity required practical.",
+    "items": [
+      "Measure the mass of the material being heated",
+      "Record the starting temperature",
+      "Heat the material with a known power for a measured time",
+      "Record the final temperature and calculate the specific heat capacity"
+    ]
+  },
+  {
+    "id": "en7",
+    "type": "extended",
+    "specRef": "8464 Physics 6.1",
+    "marks": 6,
+    "prompt": "A car engine is only around 30% efficient at converting fuel's chemical energy into useful kinetic energy. Explain where the rest of the energy goes, and why no machine can be 100% efficient.",
+    "indicativeContent": [
+      "Most of the remaining energy is dissipated as heat, mainly from friction between moving engine parts",
+      "Further energy is lost as heat and sound through the exhaust system",
+      "This dissipated energy spreads out to the surroundings and becomes less useful (though not destroyed — conservation of energy still applies)",
+      "No real machine can be 100% efficient because some friction/resistance is always present, which converts some input energy to heat",
+      "A full-marks answer names specific dissipation pathways (friction, exhaust/sound) rather than just saying \"energy is lost\""
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-2", "description": "States that energy is lost as heat, with little further detail." },
+      { "level": 2, "marksRange": "3-4", "description": "Identifies friction and/or exhaust losses, with some explanation." },
+      { "level": 3, "marksRange": "5-6", "description": "Full explanation naming specific dissipation pathways and correctly explaining why 100% efficiency is impossible." }
+    ]
+  }
+]

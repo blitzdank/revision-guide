@@ -1,0 +1,92 @@
+[
+  {
+    "id": "as1",
+    "type": "multiple_choice",
+    "specRef": "8464 Chemistry 5.1",
+    "marks": 1,
+    "prompt": "What did the alpha particle scattering experiment show?",
+    "options": [
+      "Atoms are solid spheres",
+      "Electrons are embedded in a ball of positive charge",
+      "Atoms have a tiny, dense, positively charged nucleus",
+      "Electrons exist in fixed shells"
+    ],
+    "answerIndex": 2,
+    "explanation": "Most alpha particles passed through gold foil, but some deflected or bounced back — showing a tiny, dense, positive nucleus."
+  },
+  {
+    "id": "as2",
+    "type": "short_answer",
+    "specRef": "8464 Chemistry 5.1",
+    "marks": 1,
+    "prompt": "What varies between different isotopes of the same element?",
+    "accepted": ["neutrons", "number of neutrons"],
+    "explanation": "The number of neutrons — isotopes have the same number of protons."
+  },
+  {
+    "id": "as3",
+    "type": "numeric",
+    "specRef": "8464 Chemistry 5.1",
+    "marks": 3,
+    "prompt": "Copper is 69% copper-63 and 31% copper-65. Find its relative atomic mass, to 2 d.p.",
+    "answer": 63.62,
+    "tolerance": 0.01,
+    "workedSolution": "$A_r = \\dfrac{(63\\times69)+(65\\times31)}{100} = \\dfrac{4347+2015}{100} = 63.62$."
+  },
+  {
+    "id": "as4",
+    "type": "short_answer",
+    "specRef": "8464 Chemistry 5.1",
+    "marks": 1,
+    "prompt": "What is the electronic structure of magnesium (atomic number 12)? (give as \"2,8,2\")",
+    "accepted": ["2,8,2", "2, 8, 2"],
+    "explanation": "2, 8, 2 — 2 in the first shell, 8 in the second, 2 in the outer shell."
+  },
+  {
+    "id": "as5",
+    "type": "multiple_choice",
+    "specRef": "8464 Chemistry 5.1",
+    "marks": 1,
+    "prompt": "Why are Group 0 elements unreactive?",
+    "options": [
+      "They have no electrons",
+      "They have full outer electron shells",
+      "They have only one electron",
+      "They are all gases"
+    ],
+    "answerIndex": 1,
+    "explanation": "Full outer shells mean no tendency to gain, lose or share electrons."
+  },
+  {
+    "id": "as6",
+    "type": "ordering",
+    "specRef": "8464 Chemistry 5.1",
+    "marks": 4,
+    "prompt": "Put these models of the atom in the order they were developed.",
+    "items": [
+      "Solid, indivisible sphere",
+      "Plum pudding model (ball of positive charge with electrons embedded)",
+      "Nuclear model (small, dense, positive nucleus)",
+      "Bohr's model (electrons in specific shells)"
+    ]
+  },
+  {
+    "id": "as7",
+    "type": "extended",
+    "specRef": "8464 Chemistry 5.1",
+    "marks": 6,
+    "prompt": "Explain why reactivity decreases down Group 7 (the halogens), in terms of electronic structure.",
+    "indicativeContent": [
+      "Group 7 elements react by gaining one electron to complete their outer shell",
+      "Going down the group, atoms get bigger — the outer shell is further from the nucleus",
+      "This means the attraction between the nucleus and an incoming electron is weaker",
+      "It becomes harder to gain an extra electron, so reactivity decreases down the group",
+      "A full-marks answer links atomic size to the strength of nuclear attraction, not just states the trend"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-2", "description": "States that reactivity decreases down the group, with little explanation." },
+      { "level": 2, "marksRange": "3-4", "description": "Links decreasing reactivity to increasing atomic size." },
+      { "level": 3, "marksRange": "5-6", "description": "Full explanation connecting atomic size, distance from nucleus, and strength of attraction for an extra electron." }
+    ]
+  }
+]

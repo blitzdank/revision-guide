@@ -1,0 +1,27 @@
+{
+  "qualification": "AQA GCSE Combined Science: Trilogy (8464), Higher tier — Chemistry",
+  "papers": [
+    {
+      "id": "paper-1",
+      "name": "Chemistry Paper 1",
+      "topics": [
+        { "slug": "atomic-structure", "name": "Atomic structure and the periodic table", "specRef": "8464 Chemistry 5.1" },
+        { "slug": "bonding-structure", "name": "Bonding, structure and the properties of matter", "specRef": "8464 Chemistry 5.2" },
+        { "slug": "quantitative-chemistry", "name": "Quantitative chemistry", "specRef": "8464 Chemistry 5.3" },
+        { "slug": "chemical-changes", "name": "Chemical changes", "specRef": "8464 Chemistry 5.4" },
+        { "slug": "energy-changes", "name": "Energy changes", "specRef": "8464 Chemistry 5.5" }
+      ]
+    },
+    {
+      "id": "paper-2",
+      "name": "Chemistry Paper 2",
+      "topics": [
+        { "slug": "rates-of-reaction", "name": "Rate and extent of chemical change", "specRef": "8464 Chemistry 5.6" },
+        { "slug": "organic-chemistry", "name": "Organic chemistry", "specRef": "8464 Chemistry 5.7" },
+        { "slug": "chemical-analysis", "name": "Chemical analysis", "specRef": "8464 Chemistry 5.8" },
+        { "slug": "atmosphere", "name": "Chemistry of the atmosphere", "specRef": "8464 Chemistry 5.9" },
+        { "slug": "using-resources", "name": "Using resources", "specRef": "8464 Chemistry 5.10" }
+      ]
+    }
+  ]
+}

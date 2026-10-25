@@ -1,0 +1,85 @@
+[
+  {
+    "id": "rr1",
+    "type": "multiple_choice",
+    "specRef": "8464 Chemistry 5.6",
+    "marks": 1,
+    "prompt": "What does a catalyst do to a reaction's activation energy?",
+    "options": ["Increases it", "Decreases it", "Has no effect on it", "Removes the need for it"],
+    "answerIndex": 1,
+    "explanation": "A catalyst provides an alternative pathway with a lower activation energy."
+  },
+  {
+    "id": "rr2",
+    "type": "numeric",
+    "specRef": "8464 Chemistry 5.6",
+    "marks": 2,
+    "prompt": "3.6 g of product forms in 60 seconds. Find the mean rate of reaction, in g/s.",
+    "answer": 0.06,
+    "tolerance": 0.001,
+    "unit": "g/s",
+    "workedSolution": "rate = 3.6 g ÷ 60 s = 0.06 g/s."
+  },
+  {
+    "id": "rr3",
+    "type": "numeric",
+    "specRef": "8464 Chemistry 5.6",
+    "marks": 2,
+    "prompt": "A gas syringe collects 24 cm³ of gas in the first 20 seconds of a reaction. Find the mean rate, in cm³/s.",
+    "answer": 1.2,
+    "tolerance": 0.01,
+    "unit": "cm³/s",
+    "workedSolution": "rate = 24 cm³ ÷ 20 s = 1.2 cm³/s."
+  },
+  {
+    "id": "rr4",
+    "type": "short_answer",
+    "specRef": "8464 Chemistry 5.6",
+    "marks": 1,
+    "prompt": "What name is given to the minimum energy particles need to react when they collide?",
+    "accepted": ["activation energy"],
+    "explanation": "Activation energy."
+  },
+  {
+    "id": "rr5",
+    "type": "multiple_choice",
+    "specRef": "8464 Chemistry 5.6",
+    "marks": 1,
+    "prompt": "Crushing a solid reactant into a powder before reacting it increases rate by increasing:",
+    "options": ["Temperature", "Concentration", "Surface area", "Pressure"],
+    "answerIndex": 2,
+    "explanation": "A powder has much more surface area exposed for particles to collide with."
+  },
+  {
+    "id": "rr6",
+    "type": "ordering",
+    "specRef": "8464 Chemistry 5.6",
+    "marks": 4,
+    "prompt": "Put these steps in order for the \"disappearing cross\" rate practical.",
+    "items": [
+      "Place a conical flask with a cross marked underneath on a surface",
+      "Add hydrochloric acid to sodium thiosulfate solution in the flask",
+      "Time how long it takes for the cross to disappear from view",
+      "Repeat with different concentrations of sodium thiosulfate, keeping everything else constant"
+    ]
+  },
+  {
+    "id": "rr7",
+    "type": "extended",
+    "specRef": "8464 Chemistry 5.6",
+    "marks": 6,
+    "prompt": "Using collision theory, explain why increasing the concentration of a reacting solution increases the rate of reaction.",
+    "indicativeContent": [
+      "Higher concentration means more particles of reactant in the same volume",
+      "This means particles are closer together on average",
+      "This increases the frequency of collisions between reacting particles",
+      "More frequent collisions means more successful collisions (with energy ≥ activation energy) per second",
+      "A full-marks answer links concentration → particle spacing → collision frequency → rate, not just states that rate increases"
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-2", "description": "States that rate increases with concentration, with little explanation." },
+      { "level": 2, "marksRange": "3-4", "description": "Mentions more frequent collisions but doesn't fully explain why." },
+      { "level": 3, "marksRange": "5-6", "description": "Full chain of reasoning from concentration to collision frequency to rate, using collision theory correctly." }
+    ]
+  }
+]

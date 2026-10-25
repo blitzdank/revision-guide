@@ -1,0 +1,10 @@
+[
+  { "id": "f1", "front": "Name the five factors that affect reaction rate.", "back": "Concentration, pressure (gases), surface area, temperature, catalysts." },
+  { "id": "f2", "front": "Why does increasing temperature speed up a reaction so much?", "back": "Particles move faster, so collisions are both more frequent AND have more energy." },
+  { "id": "f3", "front": "What does a catalyst do?", "back": "Provides an alternative reaction pathway with a lower activation energy, without being used up itself." },
+  { "id": "f4", "front": "Rate of reaction formula", "back": "rate = quantity of reactant used (or product formed) ÷ time" },
+  { "id": "f5", "front": "How do you find the rate at a specific point on a curved graph?", "back": "Draw a tangent to the curve at that point, then calculate the gradient of the tangent." },
+  { "id": "f6", "front": "In the required practical on concentration and rate, what's the independent variable?", "back": "The concentration of the reactant being tested." },
+  { "id": "f7", "front": "What is activation energy?", "back": "The minimum energy particles need when they collide for a reaction to happen." },
+  { "id": "f8", "front": "Why does increasing surface area speed up a reaction?", "back": "It exposes more particles to collide with, without changing the total amount of substance." }
+]

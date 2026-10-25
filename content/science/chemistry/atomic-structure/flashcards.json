@@ -1,0 +1,11 @@
+[
+  { "id": "f1", "front": "Relative mass and charge of a proton, neutron and electron", "back": "Proton: mass 1, charge +1. Neutron: mass 1, charge 0. Electron: mass ≈0, charge −1." },
+  { "id": "f2", "front": "Atomic number vs mass number", "back": "Atomic number = number of protons. Mass number = protons + neutrons." },
+  { "id": "f3", "front": "What evidence led to the nuclear model of the atom?", "back": "The alpha particle scattering experiment — most particles passed through gold foil, but some deflected or bounced back, showing a tiny, dense, positive nucleus." },
+  { "id": "f4", "front": "What did Bohr's model add?", "back": "Electrons exist in specific shells (energy levels) at set distances from the nucleus." },
+  { "id": "f5", "front": "What is an isotope?", "back": "An atom of the same element (same protons) with a different number of neutrons." },
+  { "id": "f6", "front": "Sodium's electronic structure", "back": "2, 8, 1 (atomic number 11)." },
+  { "id": "f7", "front": "Why are Group 0 (noble gases) unreactive?", "back": "They have full outer electron shells." },
+  { "id": "f8", "front": "Why does reactivity increase down Group 1 (alkali metals)?", "back": "The outer electron is further from the nucleus, so less strongly held and easier to lose." },
+  { "id": "f9", "front": "Why does reactivity decrease down Group 7 (halogens)?", "back": "It gets harder to gain one more electron as atoms get bigger (the outer shell is further from the nucleus)." }
+]

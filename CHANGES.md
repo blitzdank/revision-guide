@@ -1,5 +1,26 @@
 # Changes
 
+## Phase 8 — Combined Science, Higher tier (2026-10-25)
+
+- Six real topics across all three sciences, researched against AQA's
+  official 8464 spec: **Biology** (Cell biology, Infection and response),
+  **Chemistry** (Atomic structure and the periodic table, Rate and extent
+  of chemical change), **Physics** (Energy, Forces).
+- Required practicals built directly into their relevant topic's guide
+  (microscopy and osmosis in Cell biology; concentration vs rate in Rates
+  of reaction; specific heat capacity in Energy; force/acceleration in
+  Forces) — apparatus, method, variables and sources of error — rather
+  than siloed into a separate section.
+- Correction mid-build from research: AQA's Physics equation sheet gives
+  every force/motion equation used here (s=vt, a=Δv/t, F=ma, W=mg, p=mv),
+  and Chemistry's rate topic has five factors, not four (pressure for
+  gases was missing from the first draft) — both fixed before writing the
+  content.
+- `content/science/<biology|chemistry|physics>/spec.json` lists the fuller
+  Trilogy syllabus per strand; unwritten topics show as "Coming soon."
+- `scripts/verify-science-answers.mjs` added alongside the Maths one —
+  every numeric Science answer independently recalculated and checked.
+
 ## Phase 7 — Maths, Higher tier (2026-10-23)
 
 - **KaTeX maths formatting**, wired into both guide text (Markdown `$...$`

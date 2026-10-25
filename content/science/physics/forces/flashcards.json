@@ -1,0 +1,12 @@
+[
+  { "id": "f1", "front": "Distance/speed/time equation", "back": "$s = vt$ (distance = speed × time)" },
+  { "id": "f2", "front": "Acceleration equation", "back": "$a = \\dfrac{\\Delta v}{t}$ (change in velocity ÷ time)" },
+  { "id": "f3", "front": "Newton's second law", "back": "$F = ma$ (force = mass × acceleration)" },
+  { "id": "f4", "front": "Newton's first law", "back": "An object stays at rest or moving at constant velocity unless a resultant force acts on it." },
+  { "id": "f5", "front": "Newton's third law", "back": "Every action has an equal and opposite reaction." },
+  { "id": "f6", "front": "Weight equation", "back": "$W = mg$ (weight = mass × gravitational field strength)" },
+  { "id": "f7", "front": "Difference between mass and weight", "back": "Mass (kg) doesn't change; weight (N) is a force that depends on gravitational field strength, so it changes (e.g. less on the Moon)." },
+  { "id": "f8", "front": "Momentum equation (Higher tier)", "back": "$p = mv$ (momentum = mass × velocity) — conserved in a closed system." },
+  { "id": "f9", "front": "Are the force/motion equations given in the exam?", "back": "Yes — all of them are on the AQA Combined Science Physics equation sheet." },
+  { "id": "f10", "front": "In the acceleration required practical, what do you keep constant to test the effect of force?", "back": "Mass." }
+]

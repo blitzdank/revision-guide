@@ -1,0 +1,9 @@
+[
+  { "id": "f1", "front": "Specific heat capacity equation", "back": "$\\Delta E = mc\\Delta\\theta$ (change in thermal energy = mass × specific heat capacity × change in temperature). Given in the exam." },
+  { "id": "f2", "front": "What is specific heat capacity?", "back": "The energy needed to raise the temperature of 1 kg of a substance by 1°C." },
+  { "id": "f3", "front": "Efficiency equation", "back": "efficiency = useful output energy transfer ÷ total input energy transfer" },
+  { "id": "f4", "front": "Can a machine be more than 100% efficient?", "back": "No — if your answer is over 1 (or 100%), you've made an error." },
+  { "id": "f5", "front": "In the specific heat capacity practical, why does heat loss make the calculated value too high?", "back": "The equation assumes all the electrical energy went into heating the material, but some is lost to the surroundings — so the real temperature rise was smaller than it \"should\" have been for that energy input." },
+  { "id": "f6", "front": "What is energy conservation?", "back": "Energy is never created or destroyed — only transferred between stores or dissipated to the surroundings." },
+  { "id": "f7", "front": "What usually happens to dissipated energy?", "back": "It spreads out (often as heat) to the surroundings, becoming less useful." }
+]

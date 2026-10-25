@@ -1,0 +1,12 @@
+[
+  { "id": "f1", "front": "Name three structures plant cells have that animal cells don't.", "back": "Cell wall (cellulose), chloroplasts, permanent vacuole." },
+  { "id": "f2", "front": "Magnification formula", "back": "magnification = size of image ÷ size of real object" },
+  { "id": "f3", "front": "How do you convert mm to μm?", "back": "Multiply by 1000 (1 mm = 1000 μm)." },
+  { "id": "f4", "front": "What is mitosis used for?", "back": "Growth and repair — producing two genetically identical cells." },
+  { "id": "f5", "front": "Diffusion", "back": "Net movement of particles from high to low concentration, down a concentration gradient — no energy needed." },
+  { "id": "f6", "front": "Osmosis", "back": "Movement of water molecules across a partially permeable membrane, from a dilute to a more concentrated solution." },
+  { "id": "f7", "front": "Active transport", "back": "Movement of particles from low to high concentration (against the gradient) — requires energy from respiration." },
+  { "id": "f8", "front": "What's the key difference between prokaryotic and eukaryotic cells?", "back": "Prokaryotic cells (bacteria) have no nucleus — DNA floats free as a single loop." },
+  { "id": "f9", "front": "Percentage change in mass formula (osmosis practical)", "back": "% change = (final mass − initial mass) ÷ initial mass × 100" },
+  { "id": "f10", "front": "What does a positive % change in mass mean in the osmosis practical?", "back": "The tissue gained water — the solution outside was more dilute than inside the cells." }
+]

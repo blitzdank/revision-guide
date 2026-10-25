@@ -1,0 +1,103 @@
+[
+  {
+    "id": "fo1",
+    "type": "multiple_choice",
+    "specRef": "8464 Physics 6.5",
+    "marks": 1,
+    "prompt": "Newton's first law says an object moving at constant velocity will keep doing so unless:",
+    "options": [
+      "It runs out of energy",
+      "A resultant force acts on it",
+      "It reaches the speed of light",
+      "Its mass changes"
+    ],
+    "answerIndex": 1,
+    "explanation": "A resultant force is needed to change an object's velocity (speed or direction)."
+  },
+  {
+    "id": "fo2",
+    "type": "numeric",
+    "specRef": "8464 Physics 6.5",
+    "marks": 2,
+    "prompt": "A train travels at 20 m/s for 15 seconds. Find the distance travelled.",
+    "answer": 300,
+    "tolerance": 0,
+    "unit": "m",
+    "workedSolution": "$s = vt = 20 \\times 15 = 300$ m."
+  },
+  {
+    "id": "fo3",
+    "type": "numeric",
+    "specRef": "8464 Physics 6.5",
+    "marks": 2,
+    "prompt": "A car speeds up from 5 m/s to 25 m/s in 4 seconds. Find its acceleration.",
+    "answer": 5,
+    "tolerance": 0,
+    "unit": "m/s²",
+    "workedSolution": "$a = \\dfrac{25-5}{4} = 5$ m/s²."
+  },
+  {
+    "id": "fo4",
+    "type": "numeric",
+    "specRef": "8464 Physics 6.5",
+    "marks": 2,
+    "prompt": "A resultant force accelerates a 1000 kg car at 2 m/s². Find the force.",
+    "answer": 2000,
+    "tolerance": 0,
+    "unit": "N",
+    "workedSolution": "$F = ma = 1000 \\times 2 = 2000$ N."
+  },
+  {
+    "id": "fo5",
+    "type": "numeric",
+    "specRef": "8464 Physics 6.5",
+    "marks": 2,
+    "prompt": "Find the weight of a 75 kg person on Earth (g = 9.8 N/kg).",
+    "answer": 735,
+    "tolerance": 0,
+    "unit": "N",
+    "workedSolution": "$W = mg = 75 \\times 9.8 = 735$ N."
+  },
+  {
+    "id": "fo6",
+    "type": "multiple_choice",
+    "specRef": "8464 Physics 6.5",
+    "marks": 1,
+    "prompt": "Momentum is calculated as:",
+    "options": ["mass × acceleration", "mass × velocity", "mass ÷ velocity", "force × time"],
+    "answerIndex": 1,
+    "explanation": "$p = mv$ — momentum = mass × velocity."
+  },
+  {
+    "id": "fo7",
+    "type": "ordering",
+    "specRef": "8464 Physics 6.5",
+    "marks": 3,
+    "prompt": "Put these steps in order for the required practical investigating force and acceleration.",
+    "items": [
+      "Set up a trolley on a runway with light gates to measure velocity",
+      "Add a known force via a pulley and hanging weights, keeping mass constant",
+      "Measure velocity at two points to calculate acceleration",
+      "Repeat with different forces, then repeat the whole investigation varying mass instead"
+    ]
+  },
+  {
+    "id": "fo8",
+    "type": "extended",
+    "specRef": "8464 Physics 6.5",
+    "marks": 6,
+    "prompt": "A delivery van and a small car both need to accelerate away from traffic lights at the same rate. Using F=ma, explain why the van's engine needs to provide a much larger force than the car's.",
+    "indicativeContent": [
+      "F = ma shows force needed is directly proportional to mass, for a given acceleration",
+      "The van has a much greater mass than the small car",
+      "To achieve the same acceleration, a greater mass requires a proportionally greater force",
+      "If the van's engine only provided the same force as the car's, its acceleration would be much smaller (a = F/m)",
+      "A full-marks answer uses F=ma explicitly, not just a general statement that \"heavier things need more force\""
+    ],
+    "levelDescriptors": [
+      { "level": 1, "marksRange": "1-2", "description": "States the van needs more force, with little reference to F=ma." },
+      { "level": 2, "marksRange": "3-4", "description": "Uses F=ma to explain the relationship, with some reasoning." },
+      { "level": 3, "marksRange": "5-6", "description": "Clear, full explanation using F=ma, correctly reasoning about proportionality between mass and required force." }
+    ]
+  }
+]

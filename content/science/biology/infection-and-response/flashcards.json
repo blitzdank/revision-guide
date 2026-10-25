@@ -1,0 +1,12 @@
+[
+  { "id": "f1", "front": "Name the four types of pathogen.", "back": "Bacteria, viruses, fungi, protists." },
+  { "id": "f2", "front": "Give a named bacterial disease and a named viral disease.", "back": "Bacterial: Salmonella or gonorrhoea. Viral: measles or HIV." },
+  { "id": "f3", "front": "What is a vector, in the context of disease?", "back": "Something that carries a pathogen without being infected itself — e.g. mosquitoes carrying malaria." },
+  { "id": "f4", "front": "Name the three ways white blood cells respond to a pathogen.", "back": "Phagocytosis, antibody production, antitoxin production." },
+  { "id": "f5", "front": "How does a vaccine protect someone?", "back": "Triggers antibody production (and memory cells) without causing the disease, so the body responds much faster if it meets the real pathogen later." },
+  { "id": "f6", "front": "Why don't antibiotics work on viruses?", "back": "Viruses reproduce inside human cells in a completely different way to bacteria, so antibiotics (which target bacteria) have no effect." },
+  { "id": "f7", "front": "What natural source did digitalis (a heart drug) come from?", "back": "Foxgloves." },
+  { "id": "f8", "front": "What natural source did aspirin come from?", "back": "Willow trees." },
+  { "id": "f9", "front": "Who discovered penicillin, and from what?", "back": "Alexander Fleming, from the mould Penicillium." },
+  { "id": "f10", "front": "What is a major consequence of antibiotic overuse?", "back": "The development of antibiotic-resistant strains of bacteria." }
+]

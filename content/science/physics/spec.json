@@ -1,0 +1,24 @@
+{
+  "qualification": "AQA GCSE Combined Science: Trilogy (8464), Higher tier — Physics",
+  "papers": [
+    {
+      "id": "paper-1",
+      "name": "Physics Paper 1",
+      "topics": [
+        { "slug": "energy", "name": "Energy", "specRef": "8464 Physics 6.1" },
+        { "slug": "electricity", "name": "Electricity", "specRef": "8464 Physics 6.2" },
+        { "slug": "particle-model", "name": "Particle model of matter", "specRef": "8464 Physics 6.3" },
+        { "slug": "atomic-structure-physics", "name": "Atomic structure", "specRef": "8464 Physics 6.4" }
+      ]
+    },
+    {
+      "id": "paper-2",
+      "name": "Physics Paper 2",
+      "topics": [
+        { "slug": "forces", "name": "Forces", "specRef": "8464 Physics 6.5" },
+        { "slug": "waves", "name": "Waves", "specRef": "8464 Physics 6.6" },
+        { "slug": "magnetism-electromagnetism", "name": "Magnetism and electromagnetism", "specRef": "8464 Physics 6.7" }
+      ]
+    }
+  ]
+}
